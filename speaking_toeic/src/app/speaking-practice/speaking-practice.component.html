@@ -1,0 +1,129 @@
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <div class="header-left">
+      <div class="logo">
+        <img src="/logo.png" alt="Logo" class="logo-image" (error)="onImageError($event, 'logo')">
+        <img src="/VN-2-1024x512.png" alt="TOEIC Mentors" class="logo-text-image" (error)="onImageError($event, 'text')">
+        <!-- Fallback text if images don't load -->
+        <div class="logo-fallback" *ngIf="showFallback">
+          <div class="logo-circle-fallback">
+            <span class="logo-text">TOEIC MENTORS</span>
+            <span class="logo-subtitle">Online Testing System</span>
+          </div>
+          <div class="logo-text-main">TOEIC Mentors</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-center">
+      <button class="learning-btn active">
+        <i class="icon-document">📄</i>
+        Học cơ bản
+      </button>
+      <button class="learning-btn">
+        <i class="icon-book">📖</i>
+        Học nâng cao
+      </button>
+    </div>
+    
+    <div class="header-right">
+      <button class="btn-primary">Vào học</button>
+      <div class="user-profile">
+        <i class="profile-icon">👤</i>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="main-content">
+  <div class="container">
+  
+    <!-- Back Button -->
+    <button class="back-button" (click)="goBack()">
+      Trở về
+    </button>
+
+    <div class="speaking-layout">
+      <!-- Left Menu -->
+      <aside class="left-menu">
+        <div class="menu-group">
+          <div class="menu-group-title">Luyện phát âm</div>
+          <div class="day-list">
+            @for(day of days; track day.vowel) {
+              <button 
+                class="day-item" 
+                [class.active]="activeVowel() === day.vowel"
+                (click)="selectVowel(day.vowel)">
+                {{ day.label }}
+              </button>
+            }
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center Flashcard Panel -->
+      <section class="flashcard-panel" *ngIf="getCurrentLesson()">
+        <div class="flashcard word-mode">
+          <h2 class="word-title">{{ getCurrentLesson().english }}</h2>
+          <div class="word-meaning">{{ getCurrentLesson().vietnamese }}</div>
+          
+          <div class="pronunciation-buttons">
+            <button class="pronunciation-btn us-btn" 
+                    [class.playing]="isPlayingUS()"
+                    (click)="playAudio('us')">
+              <span class="speaker-icon">🔊</span>
+              <span class="label">US</span>
+            </button>
+            <button class="pronunciation-btn uk-btn" 
+                    [class.playing]="isPlayingUK()"
+                    (click)="playAudio('uk')">
+              <span class="speaker-icon">🔊</span>
+              <span class="label">UK</span>
+            </button>
+          </div>
+
+          <div class="phonetic-line">{{ getCurrentLesson().phonetic }}</div>
+
+          <div class="recording-section">
+            <button class="record-btn" 
+                    [class.recording]="isRecording()" 
+                    [class.processing]="isProcessing()"
+                    (click)="startRecording()">
+              <span class="mic-icon" *ngIf="!isRecording() && !isProcessing()">🎤</span>
+              <span class="waveform-icon" *ngIf="isRecording()">〰️</span>
+              <span class="processing-icon" *ngIf="isProcessing()">⏳</span>
+            </button>
+            <div class="recording-text" *ngIf="isRecording()">Đang ghi lại âm thanh.. 3s</div>
+            <div class="processing-text" *ngIf="isProcessing()">Đang xử lý...</div>
+            <div class="ready-text" *ngIf="!isRecording() && !isProcessing()">Nhấn vào để nói</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Word List -->
+      <aside class="right-words">
+        @for (item of sidebarLessons; track item.id) {
+          <div class="word-item" [class.active]="item.id === getCurrentLesson()?.id" (click)="currentLessonIndex.set(lessons.indexOf(item))">
+            <div class="word-icon">📄</div>
+            <div class="word-content">
+              <div class="w-term">{{ item.english }}</div>
+              <div class="w-ipa">{{ item.phonetic }}</div>
+            </div>
+          </div>
+        }
+      </aside>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-navigation">
+      <button class="nav-btn prev-btn" (click)="navigateLesson('prev')">
+        <span class="nav-icon">◀</span>
+      </button>
+      <button class="nav-btn next-btn" (click)="navigateLesson('next')">
+        <span class="nav-icon">▶</span>
+      </button>
+    </div>
+  </div>
+</main>
