@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Azure config with API keys
+/public/config.json
+
+# Configuration file with secrets
+config.json

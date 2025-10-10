@@ -1,0 +1,10 @@
+{
+  "azure": {
+    "subscriptionKey": "YOUR_AZURE_SUBSCRIPTION_KEY_HERE",
+    "serviceRegion": "eastus",
+    "tts": {
+      "usVoice": "en-US-JennyNeural",
+      "ukVoice": "en-GB-LibbyNeural"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { Component, signal, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
+import { AzureSpeechService } from '../services/azure-speech.service';
 
 // Cấu trúc cho bài học nói - thêm thuộc tính 'vowel'
 export interface SpeakingLesson {
@@ -36,11 +37,13 @@ export class SpeakingPracticeComponent {
   showScore = signal(false);
   isPlayingUS = signal(false);
   isPlayingUK = signal(false);
+  showScoreDetails = signal(false);
   
   // Logo paths
   logoPath = 'assets/img/logo.png';
   logoTextPath = 'assets/img/VN-2-1024x512.png';
   showFallback = false;
+  showMicFallback = true; // Tạm thời enable fallback
   activeVowel = signal('i'); // Mặc định là nguyên âm 'i'
   
   // All lessons for the current topic
@@ -124,6 +127,7 @@ export class SpeakingPracticeComponent {
   constructor(
     private router: Router, 
     private route: ActivatedRoute,
+    private azureSpeech: AzureSpeechService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     this.selectVowel(this.activeVowel()); // Lọc theo nguyên âm mặc định khi khởi tạo
@@ -172,111 +176,57 @@ export class SpeakingPracticeComponent {
     this.activeTab.set(tab);
   }
   
-  startRecording() {
+  async startRecording() {
     if (this.isRecording() || this.isProcessing()) {
-      return; // Prevent multiple clicks
+      return;
     }
-
-    // Trạng thái 1: Bắt đầu ghi âm
+    const reference = this.getCurrentLesson()?.english;
+    if (!reference) return;
+  
     this.isRecording.set(true);
+    this.showScore.set(false);
     
-    // Simulate recording process (3 seconds)
-    setTimeout(() => {
+    // Delay nhỏ để Azure khởi tạo mic
+    await new Promise(resolve => setTimeout(resolve, 500));
+    this.isProcessing.set(true);
+    console.log('🎤 Azure đã sẵn sàng - Hãy nói từ:', reference);
+    
+    try {
+      const result = await this.azureSpeech.assessPronunciation(reference, 5000);
+      console.log('✅ Nhận được kết quả từ Azure:', result);
+      this.currentScore = {
+        accuracy: Math.round(result.accuracy),
+        completeness: Math.round(result.completeness),
+        fluency: Math.round(result.fluency),
+        naturalness: 60,
+        overall: Math.round(result.overall)
+      };
+      this.showScore.set(true);
+    } catch (err) {
+      console.error('❌ Lỗi chấm điểm Azure:', err);
+      // Chỉ hiện alert nếu thực sự là lỗi nghiêm trọng, không phải NoMatch
+      if (err instanceof Error && !err.message.includes('NoMatch')) {
+        alert('Không nhận dạng được giọng nói hoặc hết thời gian chờ. Vui lòng thử lại.');
+      }
+    } finally {
       this.isRecording.set(false);
-      this.isProcessing.set(true);
-      
-      // Trạng thái 2: Xử lý (2 seconds)
-      setTimeout(() => {
-        this.isProcessing.set(false);
-        this.showScore.set(true);
-        
-        // Trạng thái 3: Hoàn tất, reset về trạng thái ban đầu sau 3 giây
-        setTimeout(() => {
-          this.showScore.set(false);
-        }, 3000);
-      }, 2000);
-    }, 3000);
+      this.isProcessing.set(false);
+    }
   }
   
-  playAudio(type: 'uk' | 'us') {
+  async playAudio(type: 'uk' | 'us') {
     const word = this.getCurrentLesson().english;
-    console.log(`Playing ${type} audio for:`, word);
-    
-    // Chỉ chạy trên browser, không chạy trên server
-    if (isPlatformBrowser(this.platformId) && 'speechSynthesis' in window) {
-      // Dừng bất kỳ giọng đọc nào đang chạy
-      speechSynthesis.cancel();
-      
-      // Reset trạng thái playing
+    console.log(`Playing ${type} audio via Azure TTS for:`, word);
+    this.isPlayingUS.set(type === 'us');
+    this.isPlayingUK.set(type === 'uk');
+    try {
+      await this.azureSpeech.speak(word, type);
+    } catch (e) {
+      console.error('Lỗi TTS Azure:', e);
+      alert('Không phát âm được với Azure TTS. Vui lòng thử lại.');
+    } finally {
       this.isPlayingUS.set(false);
       this.isPlayingUK.set(false);
-      
-      // Tạo utterance mới
-      const utterance = new SpeechSynthesisUtterance(word);
-      
-      // Cấu hình giọng đọc
-      utterance.rate = 0.8; // Tốc độ đọc (0.1 - 10)
-      utterance.pitch = 1; // Cao độ (0 - 2)
-      utterance.volume = 1; // Âm lượng (0 - 1)
-      
-      // Chọn giọng đọc theo US/UK
-      const voices = speechSynthesis.getVoices();
-      let selectedVoice = null;
-      
-      if (type === 'us') {
-        // Tìm giọng Mỹ
-        selectedVoice = voices.find(voice => 
-          voice.lang.includes('en-US') || 
-          voice.name.includes('US') ||
-          voice.name.includes('American')
-        );
-      } else if (type === 'uk') {
-        // Tìm giọng Anh
-        selectedVoice = voices.find(voice => 
-          voice.lang.includes('en-GB') || 
-          voice.name.includes('UK') ||
-          voice.name.includes('British')
-        );
-      }
-      
-      // Nếu không tìm thấy giọng cụ thể, dùng giọng tiếng Anh đầu tiên
-      if (!selectedVoice) {
-        selectedVoice = voices.find(voice => voice.lang.startsWith('en'));
-      }
-      
-      if (selectedVoice) {
-        utterance.voice = selectedVoice;
-        console.log(`Using voice: ${selectedVoice.name} (${selectedVoice.lang})`);
-      }
-      
-      // Set trạng thái playing
-      if (type === 'us') {
-        this.isPlayingUS.set(true);
-      } else {
-        this.isPlayingUK.set(true);
-      }
-      
-      // Phát âm
-      speechSynthesis.speak(utterance);
-      
-      // Log khi hoàn thành
-      utterance.onend = () => {
-        console.log(`Finished speaking: ${word}`);
-        this.isPlayingUS.set(false);
-        this.isPlayingUK.set(false);
-      };
-      
-      // Log lỗi nếu có
-      utterance.onerror = (event) => {
-        console.error('Speech synthesis error:', event);
-        this.isPlayingUS.set(false);
-        this.isPlayingUK.set(false);
-      };
-      
-    } else {
-      console.warn('Speech Synthesis not supported in this browser');
-      // Fallback: hiển thị thông báo
-      alert(`Giọng đọc không được hỗ trợ trong browser này. Từ: ${word}`);
     }
   }
   
@@ -302,5 +252,43 @@ export class SpeakingPracticeComponent {
   onImageError(event: any, type: string) {
     console.log(`Image error for ${type}:`, event);
     this.showFallback = true;
+  }
+
+  onMicImageError(event: any) {
+    console.log('Mic image error:', event);
+    this.showMicFallback = true;
+  }
+
+  toggleScoreDetails() {
+    this.showScoreDetails.set(!this.showScoreDetails());
+  }
+
+  getPhonemeBreakdown() {
+    // Simulate phoneme breakdown based on current word
+    const word = this.getCurrentLesson()?.english || '';
+    if (word === 'publication') {
+      return [
+        { phoneme: 'pʌb', score: 95, color: 'good', hasData: true },
+        { phoneme: 'lɪ', score: 70, color: 'medium', hasData: true },
+        { phoneme: 'keɪ', score: 58, color: 'poor', hasData: true },
+        { phoneme: 'ʃən', score: 80, color: 'good', hasData: true }
+      ];
+    }
+    // Default breakdown for other words
+    return [
+      { phoneme: word.slice(0, 2), score: 85, color: 'good', hasData: true },
+      { phoneme: word.slice(2, 4), score: 75, color: 'medium', hasData: true },
+      { phoneme: word.slice(4), score: 65, color: 'medium', hasData: true }
+    ];
+  }
+
+  hasUndetectedPhonemes(): boolean {
+    return this.getPhonemeBreakdown().some(p => !p.hasData);
+  }
+
+  getScoreColor(score: number): string {
+    if (score >= 80) return 'good';
+    if (score >= 60) return 'medium';
+    return 'poor';
   }
 }
