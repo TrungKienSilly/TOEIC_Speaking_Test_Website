@@ -1,59 +1,88 @@
-# TOEIC Speaking Practice
+# TOEIC Speaking Test Website
 
-Trang web luyện TOEIC (nhấn mạnh phần Speaking) với giao diện hiện đại, chạy bằng Angular 20 (standalone + signals) và hỗ trợ Server-Side Rendering (SSR) với Express.
+Ứng dụng web luyện tập TOEIC Speaking với giao diện hiện đại, được xây dựng bằng Angular 20 với kiến trúc standalone components và signals. Dự án hỗ trợ Server-Side Rendering (SSR) với Express để tối ưu hiệu suất và SEO.
 
-## 🔎 Tính năng chính
-- **Trang chủ** hiển thị các lộ trình học: từ vựng, điền khuyết, học căn bản, lộ trình 600+, luyện Speaking.
-- **Luyện Speaking** theo ngày/chủ đề âm (nguyên âm/phụ âm), có flashcard từ vựng, phiên âm, và phát âm US/UK bằng Web Speech API.
-- **SSR + Express**: build production và chạy server Node để tối ưu SEO, tốc độ tải lần đầu.
+## ✨ Tính năng chính
+- **Trang chủ**: Hiển thị các lộ trình học tập và điều hướng đến các phần luyện tập
+- **Luyện Speaking**: 
+  - Luyện tập theo chủ đề và topic cụ thể
+  - Hỗ trợ phát âm với Web Speech API
+  - Giao diện flashcard từ vựng
+  - Phiên âm và phát âm US/UK
+- **SSR Support**: Tối ưu SEO và tốc độ tải trang đầu tiên
+- **Responsive Design**: Giao diện thân thiện trên mọi thiết bị
 
-## 🧱 Công nghệ
-- Angular 20, Standalone Components, Signals
-- Angular Router
-- @angular/ssr + Express (Node)
-- SCSS modules cho từng component
+## 🛠️ Công nghệ sử dụng
+- **Frontend**: Angular 20 với Standalone Components và Signals
+- **Styling**: SCSS modules
+- **SSR**: Angular SSR + Express.js
+- **Build Tool**: Angular CLI
+- **Testing**: Karma + Jasmine
 
-## 📁 Cấu trúc thư mục chính
+## 📁 Cấu trúc dự án
 
 ```text
-speaking_toeic/
-  ├─ public/                 # Tài nguyên tĩnh được copy ra root build (logo, favicon,...)
-  ├─ src/
-  │  ├─ app/
-  │  │  ├─ home/            # Trang chủ
-  │  │  └─ speaking-practice/ # Màn luyện nói
-  │  ├─ main.ts             # Entry phía trình duyệt
-  │  ├─ main.server.ts      # Entry phía server (SSR)
-  │  └─ server.ts           # Express server SSR
-  ├─ angular.json           # Cấu hình build/serve
-  ├─ package.json           # Scripts & dependencies
-  └─ README.md
+TOEIC_Speaking_Test_Website/
+├─ speaking_toeic/              # Thư mục chính của ứng dụng Angular
+│  ├─ public/                   # Tài nguyên tĩnh (logo, favicon, v.v.)
+│  ├─ src/
+│  │  ├─ app/
+│  │  │  ├─ home/              # Component trang chủ
+│  │  │  ├─ speaking-practice/ # Component luyện speaking
+│  │  │  ├─ services/          # Các service Angular
+│  │  │  ├─ app.routes.ts      # Cấu hình routing
+│  │  │  └─ app.ts             # Root component
+│  │  ├─ main.ts               # Entry point cho browser
+│  │  ├─ main.server.ts        # Entry point cho SSR
+│  │  └─ server.ts             # Express server cho SSR
+│  ├─ angular.json             # Cấu hình Angular CLI
+│  ├─ package.json             # Dependencies và scripts
+│  └─ tsconfig.json            # Cấu hình TypeScript
+└─ README.md                   # File này
 ```
 
-Lưu ý: Thư mục `public/` đã được khai báo trong `angular.json` để copy toàn bộ nội dung vào build. Nếu bạn cần dùng `src/assets`, hãy thêm vào `options.assets` trong `angular.json`.
+**Lưu ý**: Thư mục `public/` được cấu hình trong `angular.json` để copy tự động vào build output.
 
-## 🚀 Chạy dự án (Dev)
-Yêu cầu: Node >= 18.
+## 🚀 Cài đặt và chạy dự án
 
+### Yêu cầu hệ thống
+- **Node.js**: >= 18.0.0
+- **npm**: >= 8.0.0 (đi kèm với Node.js)
+
+### Cài đặt
+
+1. **Clone repository**:
+```bash
+git clone <repository-url>
+cd TOEIC_Speaking_Test_Website
+```
+
+2. **Cài đặt dependencies**:
 ```bash
 cd speaking_toeic
 npm install
+```
+
+### Chạy ở môi trường Development
+
+```bash
+cd speaking_toeic
 npm start
 # hoặc: ng serve
 ```
 
-Mở trình duyệt tại `http://localhost:4200`.
+Ứng dụng sẽ chạy tại `http://localhost:4200` và tự động reload khi có thay đổi code.
 
-## 🏗️ Build Production
+### Build Production
 
 ```bash
 cd speaking_toeic
 npm run build
 ```
 
-Artifacts sẽ nằm trong `dist/speaking_toeic`. Dự án được cấu hình `outputMode: server` để phục vụ SSR.
+Build artifacts sẽ được tạo trong thư mục `dist/speaking_toeic/`. Dự án được cấu hình với `outputMode: server` để hỗ trợ SSR.
 
-## 🌐 Chạy bản SSR (Node + Express)
+### Chạy Production với SSR
 
 ```bash
 cd speaking_toeic
@@ -61,13 +90,24 @@ npm run build
 npm run serve:ssr:speaking_toeic
 ```
 
-Mặc định server lắng nghe tại `http://localhost:4000` (có thể đổi bằng biến môi trường `PORT`).
-
-## 🧪 Test
-Karma/Jasmine đã được cấu hình sẵn:
+Server sẽ chạy tại `http://localhost:4000`. Bạn có thể thay đổi port bằng biến môi trường:
 
 ```bash
+PORT=3000 npm run serve:ssr:speaking_toeic
+```
+
+## 🧪 Testing
+
+Dự án sử dụng Karma + Jasmine cho unit testing:
+
+```bash
+cd speaking_toeic
 npm test
+```
+
+Để chạy test với watch mode:
+```bash
+npm run test -- --watch
 ```
 
 ## 🛠️ Scripts npm hữu ích
@@ -86,15 +126,69 @@ npm test
 - Ảnh dùng trong giao diện (logo, banner) hiện đặt ở `public/` và được tham chiếu bằng đường dẫn tuyệt đối như `/logo.png`.
 - Nếu bạn muốn đặt file trong `src/assets/...`, cần bổ sung `src/assets` vào `angular.json > projects.speaking_toeic.architect.build.options.assets`.
 
-## 🧩 Gợi ý triển khai (Deploy)
-- **Node/VM/Container**: Build rồi chạy `serve:ssr` (port 4000). Đảm bảo Node phiên bản tương thích.
-- **Render/Heroku/Fly.io**: Dùng build command `npm run build` và start command `npm run serve:ssr:speaking_toeic`.
-- **Vercel/Netlify**: Có thể dùng adapter SSR riêng; dự án hiện dùng Express nên phù hợp hơn với môi trường Node server truyền thống.
+## 🚀 Deployment
+
+### Các nền tảng được khuyến nghị
+
+#### **Node.js Hosting (Render, Railway, Fly.io)**
+```bash
+# Build command
+npm run build
+
+# Start command  
+npm run serve:ssr:speaking_toeic
+```
+
+#### **Docker**
+Tạo `Dockerfile` trong thư mục `speaking_toeic/`:
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+RUN npm run build
+EXPOSE 4000
+CMD ["npm", "run", "serve:ssr:speaking_toeic"]
+```
+
+#### **Heroku**
+Thêm vào `package.json`:
+```json
+{
+  "scripts": {
+    "heroku-postbuild": "npm run build",
+    "start": "npm run serve:ssr:speaking_toeic"
+  }
+}
+```
+
+### Biến môi trường
+- `PORT`: Port cho server (mặc định: 4000)
+- `NODE_ENV`: Môi trường (production/development)
 
 ## ❓ Khắc phục sự cố
-- Lỗi phát âm (TTS) không chạy: Trình duyệt phải hỗ trợ Web Speech API và chỉ hoạt động phía client (không chạy trên SSR). Hãy thử Chrome mới nhất.
-- Ảnh không hiển thị: Kiểm tra đường dẫn. Với ảnh trong `public/`, dùng `/ten-anh.png`. Với ảnh trong `src/assets`, cần khai báo assets trong `angular.json`.
-- Build SSR lỗi: Xoá `node_modules` và cài lại, đảm bảo Node >= 18.
+
+### Lỗi thường gặp
+
+**🔊 Web Speech API không hoạt động**
+- Đảm bảo sử dụng trình duyệt hỗ trợ (Chrome, Edge, Safari)
+- Web Speech API chỉ hoạt động trên HTTPS hoặc localhost
+- Tính năng chỉ chạy phía client, không hoạt động trong SSR
+
+**🖼️ Assets không hiển thị**
+- Kiểm tra đường dẫn: files trong `public/` dùng `/filename.ext`
+- Nếu dùng `src/assets/`, cần cấu hình trong `angular.json`
+
+**🏗️ Build errors**
+- Xóa `node_modules` và `package-lock.json`, sau đó `npm install`
+- Đảm bảo Node.js >= 18.0.0
+- Kiểm tra TypeScript errors với `ng build --verbose`
+
+**🌐 SSR issues**
+- Đảm bảo không sử dụng browser-only APIs trong component lifecycle
+- Sử dụng `isPlatformBrowser()` để check môi trường
+- Kiểm tra server logs khi chạy production build
 
 ---
 
