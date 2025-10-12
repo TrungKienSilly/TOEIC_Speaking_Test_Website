@@ -37,8 +37,8 @@ export class AzureSpeechService {
     // Sử dụng config hardcode trực tiếp
     this.config = {
       azure: {
-        subscriptionKey: 'your_api_key',
-        serviceRegion: 'your_region',
+        subscriptionKey: 'your api key',
+        serviceRegion: 'your region',
         tts: {
           usVoice: 'en-US-JennyNeural',
           ukVoice: 'en-GB-LibbyNeural'
