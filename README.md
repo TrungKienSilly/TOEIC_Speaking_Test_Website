@@ -1,195 +1,94 @@
 # TOEIC Speaking Test Website
 
-Ứng dụng web luyện tập TOEIC Speaking với giao diện hiện đại, được xây dựng bằng Angular 20 với kiến trúc standalone components và signals. Dự án hỗ trợ Server-Side Rendering (SSR) với Express để tối ưu hiệu suất và SEO.
+Ứng dụng web luyện Speaking cho kỳ thi TOEIC, xây dựng bằng Angular 20 với kiến trúc standalone component, signals và zoneless change detection. Dự án hỗ trợ Server-Side Rendering (SSR) bằng Express để cải thiện tốc độ tải ban đầu và SEO.
 
-## ✨ Tính năng chính
-- **Trang chủ**: Hiển thị các lộ trình học tập và điều hướng đến các phần luyện tập
-- **Luyện Speaking**: 
-  - Luyện tập theo chủ đề và topic cụ thể
-  - Hỗ trợ phát âm với Web Speech API
-  - Giao diện flashcard từ vựng
-  - Phiên âm và phát âm US/UK
-- **SSR Support**: Tối ưu SEO và tốc độ tải trang đầu tiên
-- **Responsive Design**: Giao diện thân thiện trên mọi thiết bị
+## Tổng quan
+- **Lộ trình học**: `HomeComponent` cung cấp nhiều đường học khác nhau (từ vựng, điền khuyết, lộ trình theo tuần, luyện speaking).
+- **Luyện phát âm**: `SpeakingPracticeComponent` hiển thị flashcard, phát âm US/UK thông qua Azure TTS và chấm điểm phát âm sử dụng Azure Cognitive Services.
+- **Topic riêng**: Các component theo chủ đề (`school-topic`, `hobby-topic`, …) cho phép điều hướng trực tiếp tới nội dung luyện tập cụ thể.
+- **SSR & Responsive**: `server.ts` cấu hình Express để render Angular phía server, đồng thời giao diện được thiết kế responsive với SCSS.
 
-## 🛠️ Công nghệ sử dụng
-- **Frontend**: Angular 20 với Standalone Components và Signals
-- **Styling**: SCSS modules
-- **SSR**: Angular SSR + Express.js
-- **Build Tool**: Angular CLI
-- **Testing**: Karma + Jasmine
+## Công nghệ chính
+- Angular 20 (standalone components, signals, `provideZonelessChangeDetection()`).
+- Angular SSR + Express (`@angular/ssr`, `server.ts`).
+- Azure Cognitive Services Speech SDK cho Text-to-Speech và Pronunciation Assessment (`AzureSpeechService`).
+- SCSS modules cho styling, Angular CLI để build/test.
+- Karma + Jasmine cho unit test.
 
-## 📁 Cấu trúc dự án
+## Cấu trúc thư mục
 
 ```text
 TOEIC_Speaking_Test_Website/
-├─ speaking_toeic/              # Thư mục chính của ứng dụng Angular
-│  ├─ public/                   # Tài nguyên tĩnh (logo, favicon, v.v.)
+├─ speaking_toeic/                  # Ứng dụng Angular chính
+│  ├─ public/                       # Cấu hình Azure mẫu, favicon
 │  ├─ src/
-│  │  ├─ app/
-│  │  │  ├─ home/              # Component trang chủ
-│  │  │  ├─ speaking-practice/ # Component luyện speaking
-│  │  │  ├─ services/          # Các service Angular
-│  │  │  ├─ app.routes.ts      # Cấu hình routing
-│  │  │  └─ app.ts             # Root component
-│  │  ├─ main.ts               # Entry point cho browser
-│  │  ├─ main.server.ts        # Entry point cho SSR
-│  │  └─ server.ts             # Express server cho SSR
-│  ├─ angular.json             # Cấu hình Angular CLI
-│  ├─ package.json             # Dependencies và scripts
-│  └─ tsconfig.json            # Cấu hình TypeScript
-└─ README.md                   # File này
+│  │  ├─ app/                       # Standalone components + services
+│  │  │  ├─ home/                   # Trang lộ trình học
+│  │  │  ├─ speaking-practice/      # Luyện phát âm + Azure Speech
+│  │  │  ├─ services/azure-speech.service.ts
+│  │  │  ├─ app.routes.ts           # Routes cho toàn bộ topic
+│  │  │  └─ app.config.ts           # Cấu hình providers
+│  │  ├─ main.ts / main.server.ts   # Entry cho browser và SSR
+│  │  ├─ server.ts                  # Express SSR server
+│  │  └─ assets/img/                # Logo, loa, microphone, ...
+│  ├─ angular.json                  # Cấu hình Angular CLI
+│  ├─ package.json                  # Scripts & dependencies
+│  └─ README.md                     # README mặc định của Angular CLI
+└─ README.md                        # Tài liệu tổng quan (file hiện tại)
 ```
 
-**Lưu ý**: Thư mục `public/` được cấu hình trong `angular.json` để copy tự động vào build output.
+> `angular.json` đã bao gồm `src/assets`, vì vậy tất cả ảnh trong `src/assets/img/` sẽ được build tự động. Thư mục `public/` giữ các file cần copy nguyên trạng (ví dụ `config.json`).
 
-## 🚀 Cài đặt và chạy dự án
+## Yêu cầu môi trường
+- Node.js >= 18.0.0 (khuyến nghị Node 20 LTS).
+- npm >= 8 (cài kèm Node.js).
+- Tài khoản Azure Cognitive Services (nếu sử dụng tính năng phát âm).
 
-### Yêu cầu hệ thống
-- **Node.js**: >= 18.0.0
-- **npm**: >= 8.0.0 (đi kèm với Node.js)
-
-### Cài đặt
-
-1. **Clone repository**:
+## Cài đặt
 ```bash
 git clone <repository-url>
-cd TOEIC_Speaking_Test_Website
-```
-
-2. **Cài đặt dependencies**:
-```bash
-cd speaking_toeic
+cd TOEIC_Speaking_Test_Website/speaking_toeic
 npm install
 ```
 
-### Chạy ở môi trường Development
-
+## Chạy development
 ```bash
-cd speaking_toeic
 npm start
-# hoặc: ng serve
+# hoặc: npx ng serve
 ```
+- Ứng dụng chạy tại `http://localhost:4200` và hot reload khi thay đổi mã nguồn.
+- Khi cần debug SSR, có thể dùng `npx ng serve --ssr` (cần Angular CLI 20.3 trở lên).
 
-Ứng dụng sẽ chạy tại `http://localhost:4200` và tự động reload khi có thay đổi code.
-
-### Build Production
-
+## Build production & SSR
 ```bash
-cd speaking_toeic
-npm run build
-```
-
-Build artifacts sẽ được tạo trong thư mục `dist/speaking_toeic/`. Dự án được cấu hình với `outputMode: server` để hỗ trợ SSR.
-
-### Chạy Production với SSR
-
-```bash
-cd speaking_toeic
-npm run build
+npm run build               # Tạo build SSR với outputMode: server
 npm run serve:ssr:speaking_toeic
 ```
+- Build nằm tại `dist/speaking_toeic/`.
+- Server SSR chạy mặc định port 4000. Đổi port bằng `PORT=3000 npm run serve:ssr:speaking_toeic`.
 
-Server sẽ chạy tại `http://localhost:4000`. Bạn có thể thay đổi port bằng biến môi trường:
-
+## Kiểm thử
 ```bash
-PORT=3000 npm run serve:ssr:speaking_toeic
-```
-
-## 🧪 Testing
-
-Dự án sử dụng Karma + Jasmine cho unit testing:
-
-```bash
-cd speaking_toeic
 npm test
-```
-
-Để chạy test với watch mode:
-```bash
+# Watch mode
 npm run test -- --watch
 ```
 
-## 🛠️ Scripts npm hữu ích
+## Cấu hình Azure Speech
+- `AzureSpeechService` hiện đang chứa placeholder `subscriptionKey` và `serviceRegion`. Thay thế bằng thông tin thật trước khi build production.
+- Có thể sao chép `public/config.json.example` thành `public/config.json` để lưu khóa dưới dạng file tĩnh, sau đó mở rộng service đọc file này (hiện tại chưa được triển khai trong mã nguồn).
+- Yêu cầu trình duyệt hỗ trợ Web Speech/Azure SDK và chạy trên HTTPS hoặc `localhost`.
 
-```json
-{
-  "start": "ng serve",
-  "build": "ng build",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "serve:ssr:speaking_toeic": "node dist/speaking_toeic/server/server.mjs"
-}
-```
+## Quản lý tài nguyên giao diện
+- Hình ảnh sử dụng trong template (`speaking-practice.component.html`) được tham chiếu thông qua đường dẫn `/assets/...` và nằm trong `src/assets/img/`.
+- Nếu bổ sung tài nguyên mới ở `src/assets/`, chỉ cần commit và Angular CLI sẽ xử lý khi build.
+- Tài nguyên đặc biệt cần giữ nguyên tên (ví dụ logo) nên đặt ở `public/` và tham chiếu tuyệt đối (`/logo.png`).
 
-## 🖼️ Tài nguyên (Assets)
-- Ảnh dùng trong giao diện (logo, banner) hiện đặt ở `public/` và được tham chiếu bằng đường dẫn tuyệt đối như `/logo.png`.
-- Nếu bạn muốn đặt file trong `src/assets/...`, cần bổ sung `src/assets` vào `angular.json > projects.speaking_toeic.architect.build.options.assets`.
-
-## 🚀 Deployment
-
-### Các nền tảng được khuyến nghị
-
-#### **Node.js Hosting (Render, Railway, Fly.io)**
-```bash
-# Build command
-npm run build
-
-# Start command  
-npm run serve:ssr:speaking_toeic
-```
-
-#### **Docker**
-Tạo `Dockerfile` trong thư mục `speaking_toeic/`:
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 4000
-CMD ["npm", "run", "serve:ssr:speaking_toeic"]
-```
-
-#### **Heroku**
-Thêm vào `package.json`:
-```json
-{
-  "scripts": {
-    "heroku-postbuild": "npm run build",
-    "start": "npm run serve:ssr:speaking_toeic"
-  }
-}
-```
-
-### Biến môi trường
-- `PORT`: Port cho server (mặc định: 4000)
-- `NODE_ENV`: Môi trường (production/development)
-
-## ❓ Khắc phục sự cố
-
-### Lỗi thường gặp
-
-**🔊 Web Speech API không hoạt động**
-- Đảm bảo sử dụng trình duyệt hỗ trợ (Chrome, Edge, Safari)
-- Web Speech API chỉ hoạt động trên HTTPS hoặc localhost
-- Tính năng chỉ chạy phía client, không hoạt động trong SSR
-
-**🖼️ Assets không hiển thị**
-- Kiểm tra đường dẫn: files trong `public/` dùng `/filename.ext`
-- Nếu dùng `src/assets/`, cần cấu hình trong `angular.json`
-
-**🏗️ Build errors**
-- Xóa `node_modules` và `package-lock.json`, sau đó `npm install`
-- Đảm bảo Node.js >= 18.0.0
-- Kiểm tra TypeScript errors với `ng build --verbose`
-
-**🌐 SSR issues**
-- Đảm bảo không sử dụng browser-only APIs trong component lifecycle
-- Sử dụng `isPlatformBrowser()` để check môi trường
-- Kiểm tra server logs khi chạy production build
+## Lưu ý quan trọng
+- `speaking_toeic/src/app/speaking-practice/speaking-practice.component.ts` hiện vẫn còn marker merge (`<<<<<<< HEAD` …). Cần dọn sạch và hợp nhất logic trước khi build để tránh lỗi TypeScript.
+- `AzureSpeechService` chỉ hoạt động trên trình duyệt; SSR không thể gọi microphone. Sử dụng `isPlatformBrowser()` trước khi dùng API phụ thuộc browser.
+- Khi deploy lên nền tảng Node (Render, Railway, Fly.io, Heroku, …), sử dụng cặp lệnh `npm run build` và `npm run serve:ssr:speaking_toeic`.
 
 ---
 
-Nếu bạn thấy dự án hữu ích, hãy ⭐ repo trên GitHub để ủng hộ nhé!
+Nếu dự án hữu ích, đừng quên ⭐ repository để ủng hộ!
