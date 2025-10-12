@@ -1,0 +1,216 @@
+<!-- school-topic.component.html -->
+<!--  đầu -->
+<section class="header">
+  <div class="container">
+    <div class="header-left">
+      <div class="logo">
+        <img src="/assets/img/logo.png" alt="Logo" class="logo-image" (error)="onImageError($event, 'logo')">
+        <div class="brand-text">
+          <div class="brand-name">TOEIC Mentors</div>
+          <div class="brand-subtitle">Online Testing System</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <nav class="header-nav">
+        <button class="nav-item active">
+          <span class="nav-icon icon-practice"></span>
+          <span>Luyện tập</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon icon-roadmap"></span>
+          <span>Lộ trình 600+</span>
+        </button>
+        <button class="nav-item">
+          <span class="nav-icon icon-test"></span>
+          <span>Thi thử</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <button class="primary-action" (click)="goBack()">Vào học</button>
+      <div class="header-divider"></div>
+      <div class="user-info">
+        <div class="user-flag">🇻🇳</div>
+        <span class="user-tier">BASIC</span>
+        <div class="user-avatar">
+          <img src="/assets/img/avatar-placeholder.png" alt="Avatar" (error)="onImageError($event, 'avatar')">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="back-button-wrapper">
+  <button class="back-button" (click)="goBack()">
+    ← Trở về
+  </button>
+</div>
+
+<div class="speaking-layout" *ngIf="lessons.length">
+  <aside class="left-menu">
+    <div class="menu-group">
+      <div class="menu-group-title">{{ getCurrentTopicName() }}</div>
+
+      <div class="vowel-filter-section">
+        <div class="vowel-list">
+          <button
+            class="vowel-item"
+            [class.active]="activeVowel() === 'all'"
+            (click)="filterByVowel('all')">
+            Tất cả ({{ lessons.length }})
+          </button>
+          @for (vowel of getAvailableVowels(); track vowel.code) {
+            <button
+              class="vowel-item"
+              [class.active]="activeVowel() === vowel.code"
+              (click)="filterByVowel(vowel.code)">
+              {{ vowel.label }} ({{ vowel.count }})
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <section class="flashcard-panel" *ngIf="getCurrentLesson() as current">
+    <div class="flashcard word-mode">
+      <h2 class="word-title">
+        <ng-container *ngIf="getWorstPhonemeLabel() as worst">
+          {{ current.english }}
+        </ng-container>
+        <ng-container *ngIf="!getWorstPhonemeLabel()">
+          {{ current.english }}
+        </ng-container>
+      </h2>
+      <div class="word-meaning">{{ current.vietnamese }}</div>
+
+      <div class="pronunciation-buttons">
+        <button class="pronunciation-btn us-btn" (click)="playAudio('us')" [class.playing]="isPlayingUS()">
+          <img src="/assets/img/loa.png" alt="US" class="speaker-icon" (error)="onImageError($event, 'us')">
+          US
+        </button>
+        <button class="pronunciation-btn uk-btn" (click)="playAudio('uk')" [class.playing]="isPlayingUK()">
+          <img src="/assets/img/loa.png" alt="UK" class="speaker-icon" (error)="onImageError($event, 'uk')">
+          UK
+        </button>
+      </div>
+
+      <div class="phonetic-line">{{ current.phonetic }}</div>
+
+      <div class="recording-section">
+        <button class="record-btn"
+                [class.recording]="isRecording()"
+                [class.processing]="isProcessing()"
+                (click)="startRecording()">
+          <img src="/assets/img/mic-white.png" alt="Microphone" class="mic-icon" *ngIf="!isRecording() && !isProcessing()" (error)="onMicImageError($event)">
+          <img src="/assets/img/songam.png" alt="Waveform" class="waveform-icon" *ngIf="isRecording()">
+        </button>
+        <div class="recording-text" *ngIf="isRecording()">Đang ghi lại âm thanh.. 5s</div>
+        <div class="processing-text" *ngIf="!isRecording() && isProcessing()">Đang xử lý...</div>
+        <div class="ready-text" *ngIf="!isRecording() && !isProcessing() && !showScore()">Nhấn vào để nói</div>
+      </div>
+
+      <div class="score-section" *ngIf="showScore()">
+        <div class="score-header">
+          <span class="score-emoji">🎯</span>
+          <span class="score-value">{{ currentScore.overall }}</span>
+          <span class="score-emoji">🎯</span>
+        </div>
+
+        <div class="score-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="currentScore.overall"></div>
+          </div>
+        </div>
+
+        <button class="details-btn" (click)="toggleScoreDetails()">
+          Chi tiết phát âm
+          <span class="dropdown-icon" [class.rotated]="showScoreDetails()">▼</span>
+        </button>
+        <!-- câu nhận xét cho mỗi mức độ điểm -->
+        <div class="score-feedback">
+          <span class="feedback-text">{{ overallFeedback }}</span>
+        </div>
+      </div>
+
+      <div class="phoneme-details" *ngIf="showScoreDetails()">
+        <div class="phoneme-metrics">
+          <div class="metric-item">
+            <span class="metric-label">Độ chính xác</span>
+            <span class="metric-value" [class]="getScoreColor(currentScore.accuracy)">{{ currentScore.accuracy }}/100</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Độ hoàn chỉnh</span>
+            <span class="metric-value" [class]="getScoreColor(currentScore.completeness)">{{ currentScore.completeness }}/100</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Độ trôi chảy</span>
+            <span class="metric-value" [class]="getScoreColor(currentScore.fluency)">{{ currentScore.fluency }}/100</span>
+          </div>
+        </div>
+
+        <div class="phoneme-card">
+          <div class="phoneme-card__header">Chi tiết phát âm</div>
+          <table class="phoneme-card__table">
+            <tbody>
+            @for (phoneme of getPhonemeBreakdown(); track phoneme.phoneme) {
+              <tr [class.worst]="isWorstPhoneme(phoneme)" [class.no-data]="!phoneme.hasData">
+                <td class="phoneme-card__symbol">
+                  <span class="symbol-text">{{ phoneme.phoneme }}</span>
+                  <span class="symbol-score">[{{ phoneme.score }}/100]</span>
+                </td>
+                <td class="phoneme-card__status">
+                  @if (phoneme.hasData) {
+                    <span class="status-text">{{ getPhonemeFeedback(phoneme) }}</span>
+                  } @else {
+                    <span class="status-text">"Không có dữ liệu"</span>
+                  }
+                </td>
+              </tr>
+            }
+            </tbody>
+          </table>
+          @if (hasUndetectedPhonemes()) {
+            <div class="phoneme-card__summary">
+              <strong>"Không có dữ liệu"</strong>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="bottom-navigation">
+        <button class="nav-btn prev-btn" (click)="navigateLesson('prev')">
+          <span class="nav-icon">‹</span>
+        </button>
+        <button class="nav-btn next-btn" (click)="navigateLesson('next')">
+          <span class="nav-icon">›</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="right-words">
+    <div class="menu-group">
+      <div class="menu-group-title">Từ vựng</div>
+      <div class="word-list">
+        @for (lesson of sidebarLessons; track lesson.id) {
+          <div class="word-item"
+               [class.active]="lesson.id === getCurrentLesson().id"
+               (click)="selectLesson(lessons.indexOf(lesson))">
+            <div class="word-content">
+              <div class="w-term">{{ lesson.english }}</div>
+              <div class="w-ipa">{{ lesson.phonetic }}</div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="empty-state" *ngIf="!lessons.length">
+  Không tìm thấy dữ liệu cho chủ đề hiện tại.
+</div>

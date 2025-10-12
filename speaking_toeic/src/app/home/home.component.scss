@@ -82,12 +82,6 @@ body {
   object-fit: contain;
 }
 
-.logo-fallback {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
 .logo-circle-fallback {
   width: 80px; 
   height: 80px; 
@@ -653,11 +647,42 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .lesson-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.development-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.25);
+}
+
+.demo-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.25);
 }
 
 .lesson-tags {

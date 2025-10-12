@@ -3,16 +3,9 @@
   <div class="container">
     <div class="header-left">
       <div class="logo">
-        <img src="/logo.png" alt="Logo" class="logo-image" (error)="onImageError($event, 'logo')">
-        <img src="/VN-2-1024x512.png" alt="TOEIC Mentors" class="logo-text-image" (error)="onImageError($event, 'text')">
+        <img src="/assets/img/logo.png" alt="Logo" class="logo-image" (error)="onImageError($event, 'logo')">
+        <img src="/assets/img/VN-2-1024x512.png" alt="TOEIC Mentors" class="logo-text-image" (error)="onImageError($event, 'text')">
         <!-- Fallback text if images don't load -->
-        <div class="logo-fallback" *ngIf="showFallback">
-          <div class="logo-circle-fallback">
-            <span class="logo-text">TOEIC MENTORS</span>
-            <span class="logo-subtitle">Online Testing System</span>
-          </div>
-          <div class="logo-text-main">TOEIC Mentors</div>
-        </div>
       </div>
     </div>
     
@@ -254,6 +247,12 @@
                   <div class="lesson-grid">
                     @for (lesson of getCurrentSpeakingLessons(); track lesson.id) {
                       <div class="lesson-card">
+                        <div class="development-badge" *ngIf="lesson.id !== 'school'">
+                          🔒
+                        </div>
+                        <div class="demo-badge" *ngIf="lesson.id === 'school'">
+                          Demo
+                        </div>
                         <div class="lesson-tags">
                           @for (tag of lesson.tags; track tag) {
                             <span class="tag orange">{{ tag }}</span>
@@ -285,7 +284,7 @@
                 <h5>{{ exercise.title }}</h5>
                 <p>{{ exercise.description }}</p>
                 <p *ngIf="exercise.difficulty">{{ exercise.difficulty }}</p>
-                <button class="btn-lesson" (click)="goToSpeakingPractice()">
+                <button class="btn-lesson" (click)="goToSpeakingPractice(exercise.id)">
                   <i class="person-icon"></i>
                   {{ exercise.buttonText }}
                 </button>

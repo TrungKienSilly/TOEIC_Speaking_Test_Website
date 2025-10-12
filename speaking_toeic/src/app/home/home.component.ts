@@ -30,7 +30,7 @@ export interface SpeakingLesson {
   selector: 'app-home',
   imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   protected readonly title = signal('990 TOEIC Speaking Practice');
@@ -233,9 +233,20 @@ export class HomeComponent implements OnInit {
   
   // Chuyển đến trang luyện nói - điều hướng sang trang khác
   goToSpeakingPractice(topicId?: string) {
-    // Use slug in URL to avoid non-ASCII refresh issues
+    // Điều hướng đến các trang topic riêng biệt
     if (topicId) {
-      this.router.navigate(['/speaking-practice', topicId]);
+      // Map các ID cũ sang tên topic mới
+      const topicMap: { [key: string]: string } = {
+        'school': 'school',
+        'hobby': 'hobby',
+        'food': 'food',
+        'shopping': 'shopping',
+        'environment': 'environment',
+        'work': 'work'
+      };
+
+      const targetTopic = topicMap[topicId] || topicId;
+      this.router.navigate([`/${targetTopic}`]);
     } else {
       this.router.navigate(['/speaking-practice']);
     }
