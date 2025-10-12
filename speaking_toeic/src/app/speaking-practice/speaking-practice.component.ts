@@ -58,8 +58,12 @@ export class SpeakingPracticeComponent {
   logoTextPath = 'assets/img/VN-2-1024x512.png';
   showFallback = false;
   showMicFallback = true; // Tạm thời enable fallback
+<<<<<<< HEAD
   activeVowel = signal('all'); // Mặc định là 'all' để hiển thị tất cả
   activeTopic = signal<string | null>(null); // Topic hiện tại (school, hobby, etc.)
+=======
+  activeVowel = signal('i'); // Mặc định là nguyên âm 'i'
+>>>>>>> a9448cf6577b713fd8825c153a3345d5f3fbbb94
   
   // All lessons for the current topic
   lessons: SpeakingLesson[] = []; 
@@ -261,11 +265,14 @@ export class SpeakingPracticeComponent {
     try {
       const result = await this.azureSpeech.assessPronunciation(reference, 5000);
       console.log('✅ Nhận được kết quả từ Azure:', result);
+<<<<<<< HEAD
       
       // Lưu raw result để parse syllables
       this.azureRawResult = result.raw;
       this.parseSyllableDetails(result.raw);
       
+=======
+>>>>>>> a9448cf6577b713fd8825c153a3345d5f3fbbb94
       this.currentScore = {
         accuracy: Math.round(result.accuracy),
         completeness: Math.round(result.completeness),
@@ -335,6 +342,7 @@ export class SpeakingPracticeComponent {
     this.showScoreDetails.set(!this.showScoreDetails());
   }
 
+<<<<<<< HEAD
   parseSyllableDetails(rawResult: any) {
     this.syllableDetails = [];
     
@@ -377,6 +385,24 @@ export class SpeakingPracticeComponent {
     const word = this.getCurrentLesson()?.english || '';
     return [
       { phoneme: word, score: 0, color: 'poor', hasData: false }
+=======
+  getPhonemeBreakdown() {
+    // Simulate phoneme breakdown based on current word
+    const word = this.getCurrentLesson()?.english || '';
+    if (word === 'publication') {
+      return [
+        { phoneme: 'pʌb', score: 95, color: 'good', hasData: true },
+        { phoneme: 'lɪ', score: 70, color: 'medium', hasData: true },
+        { phoneme: 'keɪ', score: 58, color: 'poor', hasData: true },
+        { phoneme: 'ʃən', score: 80, color: 'good', hasData: true }
+      ];
+    }
+    // Default breakdown for other words
+    return [
+      { phoneme: word.slice(0, 2), score: 85, color: 'good', hasData: true },
+      { phoneme: word.slice(2, 4), score: 75, color: 'medium', hasData: true },
+      { phoneme: word.slice(4), score: 65, color: 'medium', hasData: true }
+>>>>>>> a9448cf6577b713fd8825c153a3345d5f3fbbb94
     ];
   }
 
@@ -389,6 +415,7 @@ export class SpeakingPracticeComponent {
     if (score >= 60) return 'medium';
     return 'poor';
   }
+<<<<<<< HEAD
 
   // Load dữ liệu theo topic ID
   loadTopicData(topicId: string) {
@@ -471,4 +498,6 @@ export class SpeakingPracticeComponent {
     const topic = this.activeTopic();
     return topic ? topicNames[topic] || topic : 'Luyện phát âm';
   }
+=======
+>>>>>>> a9448cf6577b713fd8825c153a3345d5f3fbbb94
 }
