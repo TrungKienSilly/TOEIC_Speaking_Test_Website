@@ -1,0 +1,3572 @@
+[
+    {
+        "name": "Words with the sound a in Cat",
+        "level": "basic",
+        "am": "æ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "cat",
+                "ipa": "kæt",
+                "translation": "Con Mèo",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "man",
+                "ipa": "mæn",
+                "translation": "Đàn ông, người",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 3,
+                "word": "have",
+                "ipa": "hæv",
+                "translation": "Có",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 4,
+                "word": "can",
+                "ipa": "kæn",
+                "translation": "Có thể, lon",
+                "partOfSpeech": "V (Modal), N"
+            },
+            {
+                "stt": 5,
+                "word": "hand",
+                "ipa": "hænd",
+                "translation": "Bàn tay",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 6,
+                "word": "back",
+                "ipa": "bæk",
+                "translation": "Lưng, phía sau",
+                "partOfSpeech": "N, Adv"
+            },
+            {
+                "stt": 7,
+                "word": "bad",
+                "ipa": "bæd",
+                "translation": "Tệ, xấu",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 8,
+                "word": "sad",
+                "ipa": "sæd",
+                "translation": "Buồn",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 9,
+                "word": "fan",
+                "ipa": "fæn",
+                "translation": "Quạt, người hâm mộ",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 10,
+                "word": "map",
+                "ipa": "mæp",
+                "translation": "Bản đồ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 11,
+                "word": "cap",
+                "ipa": "kæp",
+                "translation": "Mũ lưỡi trai",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 12,
+                "word": "mat",
+                "ipa": "mæt",
+                "translation": "Chiếu, thảm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 13,
+                "word": "hat",
+                "ipa": "hæt",
+                "translation": "Cái mũ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 14,
+                "word": "fat",
+                "ipa": "fæt",
+                "translation": "Mập, chất béo",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 15,
+                "word": "flat",
+                "ipa": "flæt",
+                "translation": "Bằng phẳng, căn hộ",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 16,
+                "word": "last",
+                "ipa": "læst",
+                "translation": "Cuối cùng, kéo dài",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 17,
+                "word": "past",
+                "ipa": "pæst",
+                "translation": "Quá khứ",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 18,
+                "word": "class",
+                "ipa": "klæs",
+                "translation": "Lớp học",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "ask",
+                "ipa": "æsk",
+                "translation": "Hỏi",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 20,
+                "word": "thank",
+                "ipa": "θæŋk",
+                "translation": "Cảm ơn",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 21,
+                "word": "bank",
+                "ipa": "bæŋk",
+                "translation": "Ngân hàng, bờ sông",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 22,
+                "word": "land",
+                "ipa": "lænd",
+                "translation": "Đất đai, hạ cánh",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 23,
+                "word": "plan",
+                "ipa": "plæn",
+                "translation": "Kế hoạch",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 24,
+                "word": "traffic",
+                "ipa": "ˈtræfɪk",
+                "translation": "Giao thông",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 25,
+                "word": "manager",
+                "ipa": "ˈmænəʤər",
+                "translation": "Quản lý",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 26,
+                "word": "answer",
+                "ipa": "ˈænsər",
+                "translation": "Câu trả lời",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 27,
+                "word": "apple",
+                "ipa": "ˈæpəl",
+                "translation": "Quả táo",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "happy",
+                "ipa": "ˈhæpi",
+                "translation": "Vui vẻ (âm nhấn đầu)",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 29,
+                "word": "family",
+                "ipa": "ˈfæməli",
+                "translation": "Gia đình",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 30,
+                "word": "matter",
+                "ipa": "ˈmætər",
+                "translation": "Vấn đề, vật chất",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 31,
+                "word": "travel",
+                "ipa": "ˈtrævəl",
+                "translation": "Du lịch",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 32,
+                "word": "language",
+                "ipa": "ˈlæŋɡwɪʤ",
+                "translation": "Ngôn ngữ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 33,
+                "word": "establish",
+                "ipa": "ɪˈstæblɪʃ",
+                "translation": "Thiết lập",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 34,
+                "word": "imagine",
+                "ipa": "ɪˈmæʤɪn",
+                "translation": "Tưởng tượng",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 35,
+                "word": "exactly",
+                "ipa": "ɪɡˈzæktli",
+                "translation": "Chính xác",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 36,
+                "word": "character",
+                "ipa": "ˈkærəktər",
+                "translation": "Tính cách, nhân vật",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 37,
+                "word": "magazine",
+                "ipa": "ˌmæɡəˈziːn",
+                "translation": "Tạp chí",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "address",
+                "ipa": "ˈædrɛs (N), əˈdrɛs (V)",
+                "translation": "Địa chỉ, xưng hô",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 39,
+                "word": "act",
+                "ipa": "ækt",
+                "translation": "Hành động, diễn xuất",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 40,
+                "word": "gap",
+                "ipa": "ɡæp",
+                "translation": "Khoảng trống",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 41,
+                "word": "cash",
+                "ipa": "kæʃ",
+                "translation": "Tiền mặt",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 42,
+                "word": "catch",
+                "ipa": "kæʧ",
+                "translation": "Bắt, nắm lấy",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 43,
+                "word": "match",
+                "ipa": "mæʧ",
+                "translation": "Trận đấu, que diêm",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 44,
+                "word": "bag",
+                "ipa": "bæɡ",
+                "translation": "Túi xách",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 45,
+                "word": "camp",
+                "ipa": "kæmp",
+                "translation": "Trại",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 46,
+                "word": "sample",
+                "ipa": "ˈsæmpəl",
+                "translation": "Mẫu vật",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 47,
+                "word": "track",
+                "ipa": "træk",
+                "translation": "Đường ray, theo dõi",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 48,
+                "word": "fantastic",
+                "ipa": "fænˈtæstɪk",
+                "translation": "Tuyệt vời",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 49,
+                "word": "attractive",
+                "ipa": "əˈtræktɪv",
+                "translation": "Hấp dẫn",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 50,
+                "word": "balance",
+                "ipa": "ˈbæləns",
+                "translation": "Sự cân bằng",
+                "partOfSpeech": "N, V"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound e in Bed",
+        "level": "basic",
+        "am": "ɛ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "bed",
+                "ipa": "bɛd",
+                "translation": "Giường",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "ten",
+                "ipa": "tɛn",
+                "translation": "Số mười",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 3,
+                "word": "red",
+                "ipa": "rɛd",
+                "translation": "Màu đỏ",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 4,
+                "word": "pen",
+                "ipa": "pɛn",
+                "translation": "Cây bút",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 5,
+                "word": "men",
+                "ipa": "mɛn",
+                "translation": "Những người đàn ông (số nhiều của man)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 6,
+                "word": "get",
+                "ipa": "ɡɛt",
+                "translation": "Lấy, nhận",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 7,
+                "word": "left",
+                "ipa": "lɛft",
+                "translation": "trái, đã rời đi",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 8,
+                "word": "best",
+                "ipa": "bɛst",
+                "translation": "tốt nhất",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 9,
+                "word": "send",
+                "ipa": "sɛnd",
+                "translation": "gửi",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 10,
+                "word": "end",
+                "ipa": "ɛnd",
+                "translation": "kết thúc",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 11,
+                "word": "tell",
+                "ipa": "tɛl",
+                "translation": "nói, kể",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 12,
+                "word": "help",
+                "ipa": "hɛlp",
+                "translation": "giúp đỡ",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 13,
+                "word": "test",
+                "ipa": "tɛst",
+                "translation": "bài kiểm tra",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 14,
+                "word": "dress",
+                "ipa": "drɛs",
+                "translation": "váy, mặc quần áo",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 15,
+                "word": "bell",
+                "ipa": "bɛl",
+                "translation": "cái chuông",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 16,
+                "word": "ready",
+                "ipa": "ˈrɛdi",
+                "translation": "sẵn sàng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 17,
+                "word": "head",
+                "ipa": "hɛd",
+                "translation": "cái đầu",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 18,
+                "word": "bread",
+                "ipa": "brɛd",
+                "translation": "bánh mì",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "dead",
+                "ipa": "dɛd",
+                "translation": "chết",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 20,
+                "word": "heavy",
+                "ipa": "ˈhɛvi",
+                "translation": "nặng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 21,
+                "word": "measure",
+                "ipa": "ˈmɛʒər",
+                "translation": "đo lường",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 22,
+                "word": "pleasant",
+                "ipa": "ˈplɛzənt",
+                "translation": "dễ chịu",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 23,
+                "word": "friend",
+                "ipa": "frɛnd",
+                "translation": "bạn bè",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 24,
+                "word": "many",
+                "ipa": "ˈmɛni",
+                "translation": "nhiều",
+                "partOfSpeech": "Det"
+            },
+            {
+                "stt": 25,
+                "word": "any",
+                "ipa": "ˈɛni",
+                "translation": "bất cứ",
+                "partOfSpeech": "Det"
+            },
+            {
+                "stt": 26,
+                "word": "said",
+                "ipa": "sɛd",
+                "translation": "(đã nói) quá khứ của say",
+                "partOfSpeech": ""
+            },
+            {
+                "stt": 27,
+                "word": "again",
+                "ipa": "əˈɡɛn",
+                "translation": "lại, một lần nữa",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 28,
+                "word": "guess",
+                "ipa": "ɡɛs",
+                "translation": "đoán",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 29,
+                "word": "guest",
+                "ipa": "ɡɛst",
+                "translation": "khách mời",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 30,
+                "word": "better",
+                "ipa": "ˈbɛtər",
+                "translation": "tốt hơn",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 31,
+                "word": "member",
+                "ipa": "ˈmɛmbər",
+                "translation": "thành viên",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 32,
+                "word": "never",
+                "ipa": "ˈnɛvər",
+                "translation": "không bao giờ",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 33,
+                "word": "weather",
+                "ipa": "ˈwɛðər",
+                "translation": "thời tiết",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 34,
+                "word": "effort",
+                "ipa": "ˈɛfərt",
+                "translation": "nỗ lực",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 35,
+                "word": "empty",
+                "ipa": "ˈɛmpti",
+                "translation": "trống rỗng",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 36,
+                "word": "exit",
+                "ipa": "ˈɛɡzɪt",
+                "translation": "lối ra",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 37,
+                "word": "enemy",
+                "ipa": "ˈɛnəmi",
+                "translation": "kẻ thù",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "special",
+                "ipa": "ˈspɛʃəl",
+                "translation": "đặc biệt",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 39,
+                "word": "connect",
+                "ipa": "kəˈnɛkt",
+                "translation": "kết nối",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 40,
+                "word": "accept",
+                "ipa": "əkˈsɛpt",
+                "translation": "chấp nhận",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 41,
+                "word": "address",
+                "ipa": "əˈdrɛs",
+                "translation": "địa chỉ (âm nhấn thứ hai)",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 42,
+                "word": "level",
+                "ipa": "ˈlɛvəl",
+                "translation": "mức độ, cấp độ",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 43,
+                "word": "seven",
+                "ipa": "ˈsɛvən",
+                "translation": "số bảy",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 44,
+                "word": "eleven",
+                "ipa": "ɪˈlɛvən",
+                "translation": "số mười một",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 45,
+                "word": "check",
+                "ipa": "ʧɛk",
+                "translation": "kiểm tra, séc",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 46,
+                "word": "neck",
+                "ipa": "nɛk",
+                "translation": "cái cổ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 47,
+                "word": "less",
+                "ipa": "lɛs",
+                "translation": "ít hơn",
+                "partOfSpeech": "Adv, A"
+            },
+            {
+                "stt": 48,
+                "word": "step",
+                "ipa": "stɛp",
+                "translation": "bước, bậc thang",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 49,
+                "word": "weapon",
+                "ipa": "ˈwɛpən",
+                "translation": "vũ khí",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 50,
+                "word": "health",
+                "ipa": "hɛlθ",
+                "translation": "sức khỏe",
+                "partOfSpeech": "N"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound i in Fish",
+        "level": "basic",
+        "am": "ɪ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "fish",
+                "ipa": "fɪʃ",
+                "partOfSpeech": "N",
+                "translation": "Con cá"
+            },
+            {
+                "stt": 2,
+                "word": "sit",
+                "ipa": "sɪt",
+                "partOfSpeech": "V",
+                "translation": "Ngồi"
+            },
+            {
+                "stt": 3,
+                "word": "big",
+                "ipa": "bɪɡ",
+                "partOfSpeech": "A",
+                "translation": "Lớn, to"
+            },
+            {
+                "stt": 4,
+                "word": "is",
+                "ipa": "ɪz",
+                "partOfSpeech": "V",
+                "translation": "Là (động từ to be)"
+            },
+            {
+                "stt": 5,
+                "word": "it",
+                "ipa": "ɪt",
+                "partOfSpeech": "Pron",
+                "translation": "Nó"
+            },
+            {
+                "stt": 6,
+                "word": "this",
+                "ipa": "ðɪs",
+                "partOfSpeech": "Det, Pron",
+                "translation": "Cái này"
+            },
+            {
+                "stt": 7,
+                "word": "with",
+                "ipa": "wɪð",
+                "partOfSpeech": "Prep",
+                "translation": "Với"
+            },
+            {
+                "stt": 8,
+                "word": "him",
+                "ipa": "hɪm",
+                "partOfSpeech": "Pron",
+                "translation": "Anh ấy (tân ngữ)"
+            },
+            {
+                "stt": 9,
+                "word": "miss",
+                "ipa": "mɪs",
+                "partOfSpeech": "V, N",
+                "translation": "Nhớ, nhỡ"
+            },
+            {
+                "stt": 10,
+                "word": "thing",
+                "ipa": "θɪŋ",
+                "partOfSpeech": "N",
+                "translation": "Vật, điều"
+            },
+            {
+                "stt": 11,
+                "word": "ship",
+                "ipa": "ʃɪp",
+                "partOfSpeech": "N",
+                "translation": "Con tàu"
+            },
+            {
+                "stt": 12,
+                "word": "trip",
+                "ipa": "trɪp",
+                "partOfSpeech": "N",
+                "translation": "Chuyến đi"
+            },
+            {
+                "stt": 13,
+                "word": "live",
+                "ipa": "lɪv",
+                "partOfSpeech": "V",
+                "translation": "Sống, sinh sống"
+            },
+            {
+                "stt": 14,
+                "word": "give",
+                "ipa": "ɡɪv",
+                "partOfSpeech": "V",
+                "translation": "Cho"
+            },
+            {
+                "stt": 15,
+                "word": "drink",
+                "ipa": "drɪŋk",
+                "partOfSpeech": "V, N",
+                "translation": "Uống, đồ uống"
+            },
+            {
+                "stt": 16,
+                "word": "king",
+                "ipa": "kɪŋ",
+                "partOfSpeech": "N",
+                "translation": "Vua"
+            },
+            {
+                "stt": 17,
+                "word": "window",
+                "ipa": "ˈwɪndoʊ",
+                "partOfSpeech": "N",
+                "translation": "Cửa sổ (âm nhấn thứ hai)"
+            },
+            {
+                "stt": 18,
+                "word": "city",
+                "ipa": "ˈsɪti",
+                "partOfSpeech": "N",
+                "translation": "Thành phố (âm đầu)"
+            },
+            {
+                "stt": 19,
+                "word": "system",
+                "ipa": "ˈsɪstəm",
+                "partOfSpeech": "N",
+                "translation": "Hệ thống"
+            },
+            {
+                "stt": 20,
+                "word": "picture",
+                "ipa": "ˈpɪkʧər",
+                "partOfSpeech": "N",
+                "translation": "Bức tranh"
+            },
+            {
+                "stt": 21,
+                "word": "little",
+                "ipa": "ˈlɪtəl",
+                "partOfSpeech": "A, Adv",
+                "translation": "Nhỏ, ít"
+            },
+            {
+                "stt": 22,
+                "word": "business",
+                "ipa": "ˈbɪznəs",
+                "partOfSpeech": "N",
+                "translation": "Kinh doanh"
+            },
+            {
+                "stt": 23,
+                "word": "begin",
+                "ipa": "bɪˈɡɪn",
+                "partOfSpeech": "V",
+                "translation": "Bắt đầu"
+            },
+            {
+                "stt": 24,
+                "word": "different",
+                "ipa": "ˈdɪfrənt",
+                "partOfSpeech": "A",
+                "translation": "Khác biệt"
+            },
+            {
+                "stt": 25,
+                "word": "minute",
+                "ipa": "ˈmɪnɪt",
+                "partOfSpeech": "N",
+                "translation": "Phút"
+            },
+            {
+                "stt": 26,
+                "word": "women",
+                "ipa": "ˈwɪmɪn",
+                "partOfSpeech": "N",
+                "translation": "Những người phụ nữ (số nhiều của woman)"
+            },
+            {
+                "stt": 27,
+                "word": "busy",
+                "ipa": "ˈbɪzi",
+                "partOfSpeech": "A",
+                "translation": "Bận rộn"
+            },
+            {
+                "stt": 28,
+                "word": "gym",
+                "ipa": "ʤɪm",
+                "partOfSpeech": "N",
+                "translation": "Phòng tập thể dục"
+            },
+            {
+                "stt": 29,
+                "word": "symbol",
+                "ipa": "ˈsɪmbəl",
+                "partOfSpeech": "N",
+                "translation": "Biểu tượng"
+            },
+            {
+                "stt": 30,
+                "word": "mystery",
+                "ipa": "ˈmɪstəri",
+                "partOfSpeech": "N",
+                "translation": "Bí ẩn"
+            },
+            {
+                "stt": 31,
+                "word": "type",
+                "ipa": "taɪp",
+                "partOfSpeech": "N, V",
+                "translation": "Loại, đánh máy (trong typical)"
+            },
+            {
+                "stt": 32,
+                "word": "since",
+                "ipa": "sɪns",
+                "partOfSpeech": "Prep, Adv",
+                "translation": "Kể từ khi"
+            },
+            {
+                "stt": 33,
+                "word": "build",
+                "ipa": "bɪld",
+                "partOfSpeech": "V",
+                "translation": "Xây dựng"
+            },
+            {
+                "stt": 34,
+                "word": "quick",
+                "ipa": "kwɪk",
+                "partOfSpeech": "A, Adv",
+                "translation": "Nhanh"
+            },
+            {
+                "stt": 35,
+                "word": "chicken",
+                "ipa": "ˈʧɪkən",
+                "partOfSpeech": "N",
+                "translation": "Con gà"
+            },
+            {
+                "stt": 36,
+                "word": "listen",
+                "ipa": "ˈlɪsən",
+                "partOfSpeech": "V",
+                "translation": "Nghe"
+            },
+            {
+                "stt": 37,
+                "word": "imagine",
+                "ipa": "ɪˈmæʤɪn",
+                "partOfSpeech": "V",
+                "translation": "Tưởng tượng (âm đầu)"
+            },
+            {
+                "stt": 38,
+                "word": "ability",
+                "ipa": "əˈbɪləti",
+                "partOfSpeech": "N",
+                "translation": "Khả năng (âm đầu)"
+            },
+            {
+                "stt": 39,
+                "word": "difficult",
+                "ipa": "ˈdɪfɪkəlt",
+                "partOfSpeech": "A",
+                "translation": "Khó khăn"
+            },
+            {
+                "stt": 40,
+                "word": "commit",
+                "ipa": "kəˈmɪt",
+                "partOfSpeech": "V",
+                "translation": "Cam kết"
+            },
+            {
+                "stt": 41,
+                "word": "exist",
+                "ipa": "ɪɡˈzɪst",
+                "partOfSpeech": "V",
+                "translation": "Tồn tại"
+            },
+            {
+                "stt": 42,
+                "word": "limit",
+                "ipa": "ˈlɪmɪt",
+                "partOfSpeech": "N, V",
+                "translation": "Giới hạn"
+            },
+            {
+                "stt": 43,
+                "word": "middle",
+                "ipa": "ˈmɪdəl",
+                "partOfSpeech": "N, A",
+                "translation": "Ở giữa"
+            },
+            {
+                "stt": 44,
+                "word": "finish",
+                "ipa": "ˈfɪnɪʃ",
+                "partOfSpeech": "V, N",
+                "translation": "Hoàn thành"
+            },
+            {
+                "stt": 45,
+                "word": "condition",
+                "ipa": "kənˈdɪʃən",
+                "partOfSpeech": "N",
+                "translation": "Điều kiện"
+            },
+            {
+                "stt": 46,
+                "word": "institution",
+                "ipa": "ˌɪnstɪˈtuːʃən",
+                "partOfSpeech": "N",
+                "translation": "Tổ chức"
+            },
+            {
+                "stt": 47,
+                "word": "village",
+                "ipa": "ˈvɪlɪʤ",
+                "partOfSpeech": "N",
+                "translation": "Làng"
+            },
+            {
+                "stt": 48,
+                "word": "image",
+                "ipa": "ˈɪmɪʤ",
+                "partOfSpeech": "N",
+                "translation": "Hình ảnh"
+            },
+            {
+                "stt": 49,
+                "word": "rich",
+                "ipa": "rɪʧ",
+                "partOfSpeech": "A",
+                "translation": "Giàu có"
+            },
+            {
+                "stt": 50,
+                "word": "wish",
+                "ipa": "wɪʃ",
+                "partOfSpeech": "V, N",
+                "translation": "Ước muốn"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound o in Hot",
+        "level": "basic",
+        "am": "ɑ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "hot",
+                "ipa": "hɑt",
+                "translation": "Nóng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 2,
+                "word": "lot",
+                "ipa": "lɑt",
+                "translation": "Nhiều (dùng với a)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 3,
+                "word": "not",
+                "ipa": "nɑt",
+                "translation": "Không",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 4,
+                "word": "stop",
+                "ipa": "stɑp",
+                "translation": "Dừng lại",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 5,
+                "word": "box",
+                "ipa": "bɑks",
+                "translation": "Cái hộp",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 6,
+                "word": "rock",
+                "ipa": "rɑk",
+                "translation": "Đá, nhạc rock",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 7,
+                "word": "job",
+                "ipa": "ʤɑb",
+                "translation": "Công việc",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 8,
+                "word": "dog",
+                "ipa": "dɑɡ",
+                "translation": "Con chó",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 9,
+                "word": "long",
+                "ipa": "lɑŋ",
+                "translation": "Dài",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 10,
+                "word": "song",
+                "ipa": "sɑŋ",
+                "translation": "Bài hát",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 11,
+                "word": "coffee",
+                "ipa": "ˈkɑfi",
+                "translation": "Cà phê",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 12,
+                "word": "office",
+                "ipa": "ˈɑfɪs",
+                "translation": "Văn phòng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 13,
+                "word": "model",
+                "ipa": "ˈmɑdəl",
+                "translation": "Người mẫu, mô hình",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 14,
+                "word": "problem",
+                "ipa": "ˈprɑbləm",
+                "translation": "Vấn đề",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 15,
+                "word": "dollar",
+                "ipa": "ˈdɑlər",
+                "translation": "Đồng đô la",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 16,
+                "word": "college",
+                "ipa": "ˈkɑlɪʤ",
+                "translation": "Trường cao đẳng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 17,
+                "word": "possible",
+                "ipa": "ˈpɑsəbəl",
+                "translation": "Có thể",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 18,
+                "word": "doctor",
+                "ipa": "ˈdɑktər",
+                "translation": "Bác sĩ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "bomb",
+                "ipa": "bɑm",
+                "translation": "Quả bom",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 20,
+                "word": "honest",
+                "ipa": "ˈɑnəst",
+                "translation": "Trung thực",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 21,
+                "word": "watch",
+                "ipa": "wɑʧ",
+                "translation": "Xem, đồng hồ đeo tay",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 22,
+                "word": "want",
+                "ipa": "wɑnt",
+                "translation": "Muốn",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 23,
+                "word": "quality",
+                "ipa": "ˈkwɑləti",
+                "translation": "Chất lượng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 24,
+                "word": "wash",
+                "ipa": "wɑʃ",
+                "translation": "Giặt, rửa",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 25,
+                "word": "was",
+                "ipa": "wɑz",
+                "translation": "Đã là (quá khứ của to be)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 26,
+                "word": "squat",
+                "ipa": "skwɑt",
+                "translation": "Ngồi xổm",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 27,
+                "word": "knowledge",
+                "ipa": "ˈnɑlɪʤ",
+                "translation": "Kiến thức",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "contact",
+                "ipa": "ˈkɑntækt",
+                "translation": "Liên hệ",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 29,
+                "word": "common",
+                "ipa": "ˈkɑmən",
+                "translation": "Phổ biến, chung",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 30,
+                "word": "pocket",
+                "ipa": "ˈpɑkɪt",
+                "translation": "Túi áo/quần",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 31,
+                "word": "follow",
+                "ipa": "ˈfɑloʊ",
+                "translation": "Theo dõi, theo sau (âm đầu)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 32,
+                "word": "tomorrow",
+                "ipa": "təˈmɑroʊ",
+                "translation": "Ngày mai (âm đầu)",
+                "partOfSpeech": "N, Adv"
+            },
+            {
+                "stt": 33,
+                "word": "hospital",
+                "ipa": "ˈhɑspɪtəl",
+                "translation": "Bệnh viện",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 34,
+                "word": "opposite",
+                "ipa": "ˈɑpəzɪt",
+                "translation": "Đối diện, đối lập",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 35,
+                "word": "across",
+                "ipa": "əˈkrɑs",
+                "translation": "Ngang qua",
+                "partOfSpeech": "Prep, Adv"
+            },
+            {
+                "stt": 36,
+                "word": "beyond",
+                "ipa": "biˈjɑnd",
+                "translation": "Vượt ra ngoài",
+                "partOfSpeech": "Prep, Adv"
+            },
+            {
+                "stt": 37,
+                "word": "economy",
+                "ipa": "ɪˈkɑnəmi",
+                "translation": "Nền kinh tế",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "popular",
+                "ipa": "ˈpɑpjələr",
+                "translation": "Phổ biến",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 39,
+                "word": "modern",
+                "ipa": "ˈmɑdərn",
+                "translation": "Hiện đại",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 40,
+                "word": "copy",
+                "ipa": "ˈkɑpi",
+                "translation": "Sao chép, bản sao",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 41,
+                "word": "body",
+                "ipa": "ˈbɑdi",
+                "translation": "Cơ thể",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 42,
+                "word": "shop",
+                "ipa": "ʃɑp",
+                "translation": "Cửa hàng, mua sắm",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 43,
+                "word": "top",
+                "ipa": "tɑp",
+                "translation": "Đỉnh, trên cùng",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 44,
+                "word": "cost",
+                "ipa": "kɑst",
+                "translation": "Chi phí",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 45,
+                "word": "lost",
+                "ipa": "lɑst",
+                "translation": "Đã mất (quá khứ của lose)",
+                "partOfSpeech": "V, A"
+            },
+            {
+                "stt": 46,
+                "word": "father",
+                "ipa": "ˈfɑðər",
+                "translation": "Cha (âm /ɑ/ không tròn môi)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 47,
+                "word": "arm",
+                "ipa": "ɑrm",
+                "translation": "Cánh tay (âm /ɑ/ không tròn môi)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 48,
+                "word": "car",
+                "ipa": "kɑr",
+                "translation": "Xe hơi (âm /ɑ/ không tròn môi)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 49,
+                "word": "star",
+                "ipa": "stɑr",
+                "translation": "Ngôi sao (âm /ɑ/ không tròn môi)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 50,
+                "word": "party",
+                "ipa": "ˈpɑrti",
+                "translation": "Bữa tiệc (âm /ɑ/ không tròn môi)",
+                "partOfSpeech": "N"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound u in Cup",
+        "level": "basic",
+        "am": "ʌ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "cup",
+                "ipa": "kʌp",
+                "translation": "Cái cốc",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "sun",
+                "ipa": "sʌn",
+                "translation": "Mặt trời",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 3,
+                "word": "run",
+                "ipa": "rʌn",
+                "translation": "Chạy",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 4,
+                "word": "fun",
+                "ipa": "fʌn",
+                "translation": "Niềm vui",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 5,
+                "word": "bus",
+                "ipa": "bʌs",
+                "translation": "Xe buýt",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 6,
+                "word": "cut",
+                "ipa": "kʌt",
+                "translation": "Cắt",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 7,
+                "word": "but",
+                "ipa": "bʌt",
+                "translation": "Nhưng",
+                "partOfSpeech": "Conj"
+            },
+            {
+                "stt": 8,
+                "word": "up",
+                "ipa": "ʌp",
+                "translation": "Lên, trên",
+                "partOfSpeech": "Adv, Prep"
+            },
+            {
+                "stt": 9,
+                "word": "us",
+                "ipa": "ʌs",
+                "translation": "Chúng tôi (tân ngữ)",
+                "partOfSpeech": "Pron"
+            },
+            {
+                "stt": 10,
+                "word": "drug",
+                "ipa": "drʌɡ",
+                "translation": "Thuốc, ma túy",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 11,
+                "word": "jump",
+                "ipa": "ʤʌmp",
+                "translation": "Nhảy",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 12,
+                "word": "luck",
+                "ipa": "lʌk",
+                "translation": "May mắn",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 13,
+                "word": "hug",
+                "ipa": "hʌɡ",
+                "translation": "Ôm",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 14,
+                "word": "just",
+                "ipa": "ʤʌst",
+                "translation": "Chỉ là, công bằng",
+                "partOfSpeech": "Adv, A"
+            },
+            {
+                "stt": 15,
+                "word": "much",
+                "ipa": "mʌʧ",
+                "translation": "Nhiều",
+                "partOfSpeech": "Adv, A"
+            },
+            {
+                "stt": 16,
+                "word": "come",
+                "ipa": "kʌm",
+                "translation": "Đến",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 17,
+                "word": "some",
+                "ipa": "sʌm",
+                "translation": "Một vài",
+                "partOfSpeech": "Det, Pron"
+            },
+            {
+                "stt": 18,
+                "word": "done",
+                "ipa": "dʌn",
+                "translation": "Xong (quá khứ phân từ của do)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 19,
+                "word": "none",
+                "ipa": "nʌn",
+                "translation": "Không ai, không cái nào",
+                "partOfSpeech": "Pron"
+            },
+            {
+                "stt": 20,
+                "word": "love",
+                "ipa": "lʌv",
+                "translation": "Yêu, tình yêu",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 21,
+                "word": "glove",
+                "ipa": "ɡlʌv",
+                "translation": "Găng tay",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 22,
+                "word": "money",
+                "ipa": "ˈmʌni",
+                "translation": "Tiền (chữ 'o' thành /ʌ/)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 23,
+                "word": "month",
+                "ipa": "mʌnθ",
+                "translation": "Tháng (chữ 'o' thành /ʌ/)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 24,
+                "word": "wonder",
+                "ipa": "ˈwʌndər",
+                "translation": "Tự hỏi, điều kỳ diệu",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 25,
+                "word": "mother",
+                "ipa": "ˈmʌðər",
+                "translation": "Mẹ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 26,
+                "word": "color",
+                "ipa": "ˈkʌlər",
+                "translation": "Màu sắc",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 27,
+                "word": "brother",
+                "ipa": "ˈbrʌðər",
+                "translation": "Anh/em trai",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "dozen",
+                "ipa": "ˈdʌzən",
+                "translation": "Tá (12 cái)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 29,
+                "word": "young",
+                "ipa": "jʌŋ",
+                "translation": "Trẻ",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 30,
+                "word": "touch",
+                "ipa": "tʌʧ",
+                "translation": "Chạm",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 31,
+                "word": "trouble",
+                "ipa": "ˈtrʌbəl",
+                "translation": "Rắc rối",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 32,
+                "word": "double",
+                "ipa": "ˈdʌbəl",
+                "translation": "Đôi, gấp đôi",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 33,
+                "word": "enough",
+                "ipa": "ɪˈnʌf",
+                "translation": "Đủ",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 34,
+                "word": "study",
+                "ipa": "ˈstʌdi",
+                "translation": "Học, nghiên cứu",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 35,
+                "word": "country",
+                "ipa": "ˈkʌntri",
+                "translation": "Quốc gia",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 36,
+                "word": "public",
+                "ipa": "ˈpʌblɪk",
+                "translation": "Công cộng",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 37,
+                "word": "subject",
+                "ipa": "ˈsʌbʤɛkt",
+                "translation": "Chủ đề, môn học",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "number",
+                "ipa": "ˈnʌmbər",
+                "translation": "Số",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 39,
+                "word": "customer",
+                "ipa": "ˈkʌstəmər",
+                "translation": "Khách hàng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 40,
+                "word": "above",
+                "ipa": "əˈbʌv",
+                "translation": "Ở trên",
+                "partOfSpeech": "Adv, Prep"
+            },
+            {
+                "stt": 41,
+                "word": "discover",
+                "ipa": "dɪˈskʌvər",
+                "translation": "Khám phá",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 42,
+                "word": "flood",
+                "ipa": "flʌd",
+                "translation": "Lũ lụt (chữ 'oo' thành /ʌ/)",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 43,
+                "word": "blood",
+                "ipa": "blʌd",
+                "translation": "Máu (chữ 'oo' thành /ʌ/)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 44,
+                "word": "husband",
+                "ipa": "ˈhʌzbənd",
+                "translation": "Chồng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 45,
+                "word": "sudden",
+                "ipa": "ˈsʌdən",
+                "translation": "Đột ngột",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 46,
+                "word": "punish",
+                "ipa": "ˈpʌnɪʃ",
+                "translation": "Phạt",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 47,
+                "word": "structure",
+                "ipa": "ˈstrʌkʧər",
+                "translation": "Cấu trúc",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 48,
+                "word": "culture",
+                "ipa": "ˈkʌlʧər",
+                "translation": "Văn hóa",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 49,
+                "word": "budget",
+                "ipa": "ˈbʌʤɪt",
+                "translation": "Ngân sách",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 50,
+                "word": "summer",
+                "ipa": "ˈsʌmər",
+                "translation": "Mùa hè",
+                "partOfSpeech": "N"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound a in Cake",
+        "level": "basic",
+        "am": "eɪ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "cake",
+                "ipa": "keɪk",
+                "translation": "Bánh kem",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "name",
+                "ipa": "neɪm",
+                "translation": "Tên",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 3,
+                "word": "late",
+                "ipa": "leɪt",
+                "translation": "Trễ, muộn",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 4,
+                "word": "make",
+                "ipa": "meɪk",
+                "translation": "Làm, tạo ra",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 5,
+                "word": "take",
+                "ipa": "teɪk",
+                "translation": "Lấy, mang đi",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 6,
+                "word": "came",
+                "ipa": "keɪm",
+                "translation": "Đã đến (quá khứ của come)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 7,
+                "word": "save",
+                "ipa": "seɪv",
+                "translation": "Tiết kiệm, cứu",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 8,
+                "word": "face",
+                "ipa": "feɪs",
+                "translation": "Khuôn mặt, đối diện",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 9,
+                "word": "place",
+                "ipa": "pleɪs",
+                "translation": "Nơi chốn, đặt",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 10,
+                "word": "date",
+                "ipa": "deɪt",
+                "translation": "Ngày tháng, hẹn hò",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 11,
+                "word": "rain",
+                "ipa": "reɪn",
+                "translation": "Mưa",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 12,
+                "word": "main",
+                "ipa": "meɪn",
+                "translation": "Chính, chủ yếu",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 13,
+                "word": "train",
+                "ipa": "treɪn",
+                "translation": "Tàu hỏa, huấn luyện",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 14,
+                "word": "wait",
+                "ipa": "weɪt",
+                "translation": "Chờ đợi",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 15,
+                "word": "plain",
+                "ipa": "pleɪn",
+                "translation": "Đơn giản, đồng bằng",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 16,
+                "word": "day",
+                "ipa": "deɪ",
+                "translation": "Ngày",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 17,
+                "word": "say",
+                "ipa": "seɪ",
+                "translation": "Nói",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 18,
+                "word": "way",
+                "ipa": "weɪ",
+                "translation": "Cách, đường đi",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "play",
+                "ipa": "pleɪ",
+                "translation": "Chơi",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 20,
+                "word": "may",
+                "ipa": "meɪ",
+                "translation": "Có thể",
+                "partOfSpeech": "V (Modal)"
+            },
+            {
+                "stt": 21,
+                "word": "stay",
+                "ipa": "steɪ",
+                "translation": "Ở lại",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 22,
+                "word": "eight",
+                "ipa": "eɪt",
+                "translation": "Số tám",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 23,
+                "word": "great",
+                "ipa": "ɡreɪt",
+                "translation": "Tuyệt vời, to lớn",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 24,
+                "word": "break",
+                "ipa": "breɪk",
+                "translation": "Phá vỡ, nghỉ giải lao",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 25,
+                "word": "neighbor",
+                "ipa": "ˈneɪbər",
+                "translation": "Hàng xóm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 26,
+                "word": "weigh",
+                "ipa": "weɪ",
+                "translation": "Cân nặng",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 27,
+                "word": "vein",
+                "ipa": "veɪn",
+                "translation": "Tĩnh mạch",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "they",
+                "ipa": "ðeɪ",
+                "translation": "Họ",
+                "partOfSpeech": "Pron"
+            },
+            {
+                "stt": 29,
+                "word": "freight",
+                "ipa": "freɪt",
+                "translation": "Hàng hóa vận chuyển",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 30,
+                "word": "straight",
+                "ipa": "streɪt",
+                "translation": "Thẳng",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 31,
+                "word": "change",
+                "ipa": "ʧeɪnʤ",
+                "translation": "Thay đổi",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 32,
+                "word": "range",
+                "ipa": "reɪnʤ",
+                "translation": "Phạm vi, dãy",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 33,
+                "word": "danger",
+                "ipa": "ˈdeɪnʤər",
+                "translation": "Nguy hiểm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 34,
+                "word": "angel",
+                "ipa": "/ˈeɪnʤəl",
+                "translation": "Thiên thần",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 35,
+                "word": "able",
+                "ipa": "ˈeɪbəl",
+                "translation": "Có khả năng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 36,
+                "word": "paper",
+                "ipa": "ˈpeɪpər",
+                "translation": "Giấy",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 37,
+                "word": "table",
+                "ipa": "ˈteɪbəl",
+                "translation": "Cái bàn",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "nation",
+                "ipa": "ˈneɪʃən",
+                "translation": "Quốc gia",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 39,
+                "word": "vacation",
+                "ipa": "veɪˈkeɪʃən",
+                "translation": "Kỳ nghỉ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 40,
+                "word": "explain",
+                "ipa": "ɪkˈspleɪn",
+                "translation": "Giải thích",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 41,
+                "word": "contain",
+                "ipa": "kənˈteɪn",
+                "translation": "Chứa đựng",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 42,
+                "word": "obtain",
+                "ipa": "əbˈteɪn",
+                "translation": "Đạt được",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 43,
+                "word": "delay",
+                "ipa": "dɪˈleɪ",
+                "translation": "Trì hoãn",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 44,
+                "word": "betray",
+                "ipa": "bɪˈtreɪ",
+                "translation": "Phản bội",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 45,
+                "word": "convey",
+                "ipa": "kənˈveɪ",
+                "translation": "Truyền đạt",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 46,
+                "word": "eighteen",
+                "ipa": "ˌeɪˈtiːn",
+                "translation": "Số mười tám",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 47,
+                "word": "campaign",
+                "ipa": "kæmˈpeɪn",
+                "translation": "Chiến dịch",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 48,
+                "word": "reign",
+                "ipa": "reɪn",
+                "translation": "Triều đại, trị vì",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 49,
+                "word": "pale",
+                "ipa": "peɪl",
+                "translation": "Nhợt nhạt, tái",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 50,
+                "word": "sale",
+                "ipa": "seɪl",
+                "translation": "Bán, sự bán hàng",
+                "partOfSpeech": "N"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound e in Eat",
+        "level": "basic",
+        "am": "iː",
+        "list": [
+            {
+                "stt": 1,
+                "word": "eat",
+                "ipa": "iːt",
+                "translation": "Ăn",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 2,
+                "word": "see",
+                "ipa": "siː",
+                "translation": "Nhìn, gặp",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 3,
+                "word": "me",
+                "ipa": "miː",
+                "translation": "Tôi (tân ngữ)",
+                "partOfSpeech": "Pron"
+            },
+            {
+                "stt": 4,
+                "word": "tea",
+                "ipa": "tiː",
+                "translation": "Trà",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 5,
+                "word": "free",
+                "ipa": "friː",
+                "translation": "Tự do, miễn phí",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 6,
+                "word": "green",
+                "ipa": "ɡriːn",
+                "translation": "Màu xanh lá",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 7,
+                "word": "street",
+                "ipa": "striːt",
+                "translation": "Đường phố",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 8,
+                "word": "feel",
+                "ipa": "fiːl",
+                "translation": "Cảm thấy",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 9,
+                "word": "week",
+                "ipa": "wiːk",
+                "translation": "Tuần",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 10,
+                "word": "sleep",
+                "ipa": "sliːp",
+                "translation": "Ngủ",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 11,
+                "word": "deep",
+                "ipa": "diːp",
+                "translation": "Sâu",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 12,
+                "word": "tree",
+                "ipa": "triː",
+                "translation": "Cây",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 13,
+                "word": "need",
+                "ipa": "niːd",
+                "translation": "Cần",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 14,
+                "word": "read",
+                "ipa": "riːd",
+                "translation": "Đọc",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 15,
+                "word": "team",
+                "ipa": "tiːm",
+                "translation": "Đội, nhóm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 16,
+                "word": "mean",
+                "ipa": "miːn",
+                "translation": "Ý nghĩa, keo kiệt",
+                "partOfSpeech": "V, A"
+            },
+            {
+                "stt": 17,
+                "word": "clean",
+                "ipa": "kliːn",
+                "translation": "Sạch sẽ, dọn dẹp",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 18,
+                "word": "speak",
+                "ipa": "spiːk",
+                "translation": "Nói",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 19,
+                "word": "leave",
+                "ipa": "liːv",
+                "translation": "Rời đi, để lại",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 20,
+                "word": "peace",
+                "ipa": "piːs",
+                "translation": "Hòa bình",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 21,
+                "word": "reach",
+                "ipa": "riːʧ",
+                "translation": "Đạt tới, vươn tới",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 22,
+                "word": "beach",
+                "ipa": "biːʧ",
+                "translation": "Bãi biển",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 23,
+                "word": "key",
+                "ipa": "kiː",
+                "translation": "Chìa khóa",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 24,
+                "word": "money",
+                "ipa": "ˈmʌni",
+                "translation": "Tiền (trong ngữ cảnh key, valley có âm /iː/ ở cuối)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 25,
+                "word": "happy",
+                "ipa": "ˈhæpi",
+                "translation": "Vui vẻ (âm /iː/ ở cuối, rất phổ biến)",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 26,
+                "word": "city",
+                "ipa": "ˈsɪti",
+                "translation": "Thành phố",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 27,
+                "word": "easy",
+                "ipa": "ˈiːzi",
+                "translation": "Dễ dàng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 28,
+                "word": "pretty",
+                "ipa": "ˈprɪti",
+                "translation": "Xinh đẹp, khá là",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 29,
+                "word": "field",
+                "ipa": "fiːld",
+                "translation": "Cánh đồng, lĩnh vực",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 30,
+                "word": "piece",
+                "ipa": "piːs",
+                "translation": "Mảnh, miếng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 31,
+                "word": "brief",
+                "ipa": "briːf",
+                "translation": "Ngắn gọn",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 32,
+                "word": "chief",
+                "ipa": "ʧiːf",
+                "translation": "Thủ lĩnh, trưởng",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 33,
+                "word": "believe",
+                "ipa": "bɪˈliːv",
+                "translation": "Tin tưởng",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 34,
+                "word": "machine",
+                "ipa": "məˈʃiːn",
+                "translation": "Máy móc",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 35,
+                "word": "ski",
+                "ipa": "skiː",
+                "translation": "Trượt tuyết",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 36,
+                "word": "police",
+                "ipa": "pəˈliːs",
+                "translation": "Cảnh sát",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 37,
+                "word": "sheep",
+                "ipa": "ʃiːp",
+                "translation": "con cừu",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "bean",
+                "ipa": "biːn",
+                "translation": "Hạt đậu",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 39,
+                "word": "meat",
+                "ipa": "miːt",
+                "translation": "thịt",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 40,
+                "word": "agree",
+                "ipa": "əˈɡriː",
+                "translation": "Đồng ý",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 41,
+                "word": "complete",
+                "ipa": "kəmˈpliːt",
+                "translation": "Hoàn thành, hoàn chỉnh",
+                "partOfSpeech": "V, A"
+            },
+            {
+                "stt": 42,
+                "word": "receive",
+                "ipa": "rɪˈsiːv",
+                "translation": "Nhận",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 43,
+                "word": "scene",
+                "ipa": "siːn",
+                "translation": "Cảnh tượng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 44,
+                "word": "theme",
+                "ipa": "θiːm",
+                "translation": "Chủ đề",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 45,
+                "word": "equal",
+                "ipa": "ˈiːkwəl",
+                "translation": "Bằng, bình đẳng",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 46,
+                "word": "meter",
+                "ipa": "ˈmiːtər",
+                "translation": "Mét, đồng hồ đo",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 47,
+                "word": "secret",
+                "ipa": "ˈsiːkrət",
+                "translation": "Bí mật",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 48,
+                "word": "legal",
+                "ipa": "ˈliːɡəl",
+                "translation": "Hợp pháp",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 49,
+                "word": "convenient",
+                "ipa": "kənˈviːniənt",
+                "translation": "Thuận tiện",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 50,
+                "word": "immediately",
+                "ipa": "ɪˈmiːdiətli",
+                "translation": "Ngay lập tức",
+                "partOfSpeech": "Adv"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound i in Rice",
+        "level": "basic",
+        "am": "aɪ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "rice",
+                "ipa": "raɪs",
+                "translation": "Gạo, cơm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "time",
+                "ipa": "taɪm",
+                "translation": "Thời gian",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 3,
+                "word": "like",
+                "ipa": "laɪk",
+                "translation": "Thích, giống như",
+                "partOfSpeech": "V, Prep"
+            },
+            {
+                "stt": 4,
+                "word": "my",
+                "ipa": "maɪ",
+                "translation": "Của tôi",
+                "partOfSpeech": "Poss Det"
+            },
+            {
+                "stt": 5,
+                "word": "fly",
+                "ipa": "flaɪ",
+                "translation": "Bay, con ruồi",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 6,
+                "word": "cry",
+                "ipa": "kraɪ",
+                "translation": "Khóc, la hét",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 7,
+                "word": "die",
+                "ipa": "daɪ",
+                "translation": "Chết",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 8,
+                "word": "lie",
+                "ipa": "laɪ",
+                "translation": "Nằm, nói dối",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 9,
+                "word": "light",
+                "ipa": "laɪt",
+                "translation": "Ánh sáng, nhẹ",
+                "partOfSpeech": "N, A"
+            },
+            {
+                "stt": 10,
+                "word": "high",
+                "ipa": "haɪ",
+                "translation": "Cao",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 11,
+                "word": "right",
+                "ipa": "raɪt",
+                "translation": "Đúng, phải",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 12,
+                "word": "fine",
+                "ipa": "faɪn",
+                "translation": "Tốt, ổn, tiền phạt",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 13,
+                "word": "side",
+                "ipa": "saɪd",
+                "translation": "Bên, mặt",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 14,
+                "word": "drive",
+                "ipa": "draɪv",
+                "translation": "Lái xe",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 15,
+                "word": "mile",
+                "ipa": "maɪl",
+                "translation": "Dặm (đơn vị đo lường)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 16,
+                "word": "life",
+                "ipa": "laɪf",
+                "translation": "Cuộc sống",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 17,
+                "word": "quite",
+                "ipa": "kwaɪt",
+                "translation": "Khá là, hoàn toàn",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 18,
+                "word": "bike",
+                "ipa": "baɪk",
+                "translation": "Xe đạp",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "write",
+                "ipa": "raɪt",
+                "translation": "Viết",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 20,
+                "word": "nine",
+                "ipa": "naɪn",
+                "translation": "Số chín",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 21,
+                "word": "hide",
+                "ipa": "haɪd",
+                "translation": "Trốn, giấu",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 22,
+                "word": "try",
+                "ipa": "traɪ",
+                "translation": "Cố gắng, thử",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 23,
+                "word": "buy",
+                "ipa": "baɪ",
+                "translation": "Mua",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 24,
+                "word": "dry",
+                "ipa": "draɪ",
+                "translation": "Khô",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 25,
+                "word": "sky",
+                "ipa": "skaɪ",
+                "translation": "Bầu trời",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 26,
+                "word": "guide",
+                "ipa": "ɡaɪd",
+                "translation": "Hướng dẫn viên, hướng dẫn",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 27,
+                "word": "prize",
+                "ipa": "praɪz",
+                "translation": "Giải thưởng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "size",
+                "ipa": "saɪz",
+                "translation": "Kích cỡ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 29,
+                "word": "wide",
+                "ipa": "waɪd",
+                "translation": "Rộng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 30,
+                "word": "tired",
+                "ipa": "ˈtaɪərd",
+                "translation": "Mệt mỏi",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 31,
+                "word": "island",
+                "ipa": "ˈaɪlənd",
+                "translation": "Hòn đảo",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 32,
+                "word": "idea",
+                "ipa": "aɪˈdiːə",
+                "translation": "Ý tưởng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 33,
+                "word": "title",
+                "ipa": "ˈtaɪtəl",
+                "translation": "Tiêu đề, danh hiệu",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 34,
+                "word": "climb",
+                "ipa": "klaɪm",
+                "translation": "Leo trèo",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 35,
+                "word": "kind",
+                "ipa": "kaɪnd",
+                "translation": "Tốt bụng, loại",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 36,
+                "word": "child",
+                "ipa": "ʧaɪld",
+                "translation": "Đứa trẻ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 37,
+                "word": "white",
+                "ipa": "waɪt",
+                "translation": "Màu trắng",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 38,
+                "word": "bright",
+                "ipa": "braɪt",
+                "translation": "Sáng, tươi sáng",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 39,
+                "word": "sign",
+                "ipa": "saɪn",
+                "translation": "Dấu hiệu, ký tên",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 40,
+                "word": "might",
+                "ipa": "maɪt",
+                "translation": "Có lẽ (modal verb), sức mạnh",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 41,
+                "word": "fight",
+                "ipa": "faɪt",
+                "translation": "Chiến đấu, cuộc chiến",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 42,
+                "word": "tight",
+                "ipa": "taɪt",
+                "translation": "Chặt, khít",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 43,
+                "word": "night",
+                "ipa": "naɪt",
+                "translation": "Buổi tối",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 44,
+                "word": "design",
+                "ipa": "dɪˈzaɪn",
+                "translation": "Thiết kế",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 45,
+                "word": "combine",
+                "ipa": "kəmˈbaɪn",
+                "translation": "Kết hợp",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 46,
+                "word": "apply",
+                "ipa": "əˈplaɪ",
+                "translation": "Áp dụng, nộp đơn",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 47,
+                "word": "reply",
+                "ipa": "rɪˈplaɪ",
+                "translation": "Trả lời",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 48,
+                "word": "define",
+                "ipa": "dɪˈfaɪn",
+                "translation": "Định nghĩa",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 49,
+                "word": "require",
+                "ipa": "rɪˈkwaɪər",
+                "translation": "Yêu cầu",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 50,
+                "word": "survive",
+                "ipa": "sərˈvaɪv",
+                "translation": "Sống sót",
+                "partOfSpeech": "V"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound o in Hello",
+        "level": "basic",
+        "am": "oʊ",
+        "list": [
+            {
+                "stt": 1,
+                "word": "hello",
+                "ipa": "həˈloʊ",
+                "translation": "Xin chào",
+                "partOfSpeech": "Interj"
+            },
+            {
+                "stt": 2,
+                "word": "go",
+                "ipa": "ɡoʊ",
+                "translation": "Đi",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 3,
+                "word": "no",
+                "ipa": "noʊ",
+                "translation": "Không",
+                "partOfSpeech": "Adv, N"
+            },
+            {
+                "stt": 4,
+                "word": "home",
+                "ipa": "hoʊm",
+                "translation": "Nhà",
+                "partOfSpeech": "N, Adv"
+            },
+            {
+                "stt": 5,
+                "word": "boat",
+                "ipa": "boʊt",
+                "translation": "Thuyền",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 6,
+                "word": "know",
+                "ipa": "noʊ",
+                "translation": "Biết",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 7,
+                "word": "show",
+                "ipa": "ʃoʊ",
+                "translation": "Cho xem, buổi biểu diễn",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 8,
+                "word": "snow",
+                "ipa": "snoʊ",
+                "translation": "Tuyết",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 9,
+                "word": "slow",
+                "ipa": "sloʊ",
+                "translation": "Chậm",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 10,
+                "word": "phone",
+                "ipa": "foʊn",
+                "translation": "Điện thoại",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 11,
+                "word": "stone",
+                "ipa": "stoʊn",
+                "translation": "Đá, hòn đá",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 12,
+                "word": "hope",
+                "ipa": "hoʊp",
+                "translation": "Hy vọng",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 13,
+                "word": "robe",
+                "ipa": "roʊb",
+                "translation": "Áo choàng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 14,
+                "word": "note",
+                "ipa": "noʊt",
+                "translation": "Ghi chú, tờ tiền",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 15,
+                "word": "code",
+                "ipa": "koʊd",
+                "translation": "Mã, luật lệ",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 16,
+                "word": "bone",
+                "ipa": "boʊn",
+                "translation": "Xương",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 17,
+                "word": "wrote",
+                "ipa": "roʊt",
+                "translation": "Đã viết (quá khứ của write)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 18,
+                "word": "road",
+                "ipa": "roʊd",
+                "translation": "Con đường",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 19,
+                "word": "load",
+                "ipa": "loʊd",
+                "translation": "Tải, gánh nặng",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 20,
+                "word": "coat",
+                "ipa": "koʊt",
+                "translation": "Áo khoác",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 21,
+                "word": "soap",
+                "ipa": "soʊp",
+                "translation": "Xà phòng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 22,
+                "word": "foam",
+                "ipa": "foʊm",
+                "translation": "Bọt",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 23,
+                "word": "toe",
+                "ipa": "toʊ",
+                "translation": "Ngón chân",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 24,
+                "word": "foe",
+                "ipa": "foʊ",
+                "translation": "Kẻ thù",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 25,
+                "word": "though",
+                "ipa": "ðoʊ",
+                "translation": "Mặc dù",
+                "partOfSpeech": "Conj"
+            },
+            {
+                "stt": 26,
+                "word": "don't",
+                "ipa": "doʊnt",
+                "translation": "Không (viết tắt của do not)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 27,
+                "word": "most",
+                "ipa": "moʊst",
+                "translation": "Hầu hết",
+                "partOfSpeech": "A, Adv"
+            },
+            {
+                "stt": 28,
+                "word": "post",
+                "ipa": "poʊst",
+                "translation": "Bưu điện, cột",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 29,
+                "word": "only",
+                "ipa": "ˈoʊnli",
+                "translation": "Chỉ, duy nhất",
+                "partOfSpeech": "Adv, A"
+            },
+            {
+                "stt": 30,
+                "word": "open",
+                "ipa": "ˈoʊpən",
+                "translation": "Mở",
+                "partOfSpeech": "V, A"
+            },
+            {
+                "stt": 31,
+                "word": "over",
+                "ipa": "ˈoʊvər",
+                "translation": "Trên, kết thúc",
+                "partOfSpeech": "Prep, Adv"
+            },
+            {
+                "stt": 32,
+                "word": "ocean",
+                "ipa": "ˈoʊʃən",
+                "translation": "Đại dương",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 33,
+                "word": "social",
+                "ipa": "ˈsoʊʃəl",
+                "translation": "Xã hội",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 34,
+                "word": "local",
+                "ipa": "ˈloʊkəl",
+                "translation": "Địa phương",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 35,
+                "word": "notice",
+                "ipa": "ˈnoʊtɪs",
+                "translation": "Thông báo, chú ý",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 36,
+                "word": "program",
+                "ipa": "ˈproʊɡræm",
+                "translation": "Chương trình",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 37,
+                "word": "motor",
+                "ipa": "ˈmoʊtər",
+                "translation": "Động cơ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 38,
+                "word": "below",
+                "ipa": "bɪˈloʊ",
+                "translation": "Ở dưới",
+                "partOfSpeech": "Adv, Prep"
+            },
+            {
+                "stt": 39,
+                "word": "borrow",
+                "ipa": "ˈbɑːroʊ",
+                "translation": "Mượn",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 40,
+                "word": "window",
+                "ipa": "ˈwɪndoʊ",
+                "translation": "Cửa sổ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 41,
+                "word": "yellow",
+                "ipa": "ˈjeloʊ",
+                "translation": "Màu vàng",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 42,
+                "word": "tomorrow",
+                "ipa": "təˈmɑːroʊ",
+                "translation": "Ngày mai",
+                "partOfSpeech": "N, Adv"
+            },
+            {
+                "stt": 43,
+                "word": "shadow",
+                "ipa": "ˈʃædoʊ",
+                "translation": "Bóng, bóng tối",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 44,
+                "word": "follow",
+                "ipa": "ˈfɑːloʊ",
+                "translation": "Theo dõi, theo sau",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 45,
+                "word": "owner",
+                "ipa": "ˈoʊnər",
+                "translation": "Chủ sở hữu",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 46,
+                "word": "sold",
+                "ipa": "soʊld",
+                "translation": "Đã bán (quá khứ của sell)",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 47,
+                "word": "cold",
+                "ipa": "koʊld",
+                "translation": "Lạnh",
+                "partOfSpeech": "A, N"
+            },
+            {
+                "stt": 48,
+                "word": "hold",
+                "ipa": "hoʊld",
+                "translation": "Giữ",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 49,
+                "word": "grow",
+                "ipa": "ɡroʊ",
+                "translation": "Mọc, phát triển",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 50,
+                "word": "throw",
+                "ipa": "θroʊ",
+                "translation": "Ném",
+                "partOfSpeech": "V"
+            }
+        ]
+    },
+    {
+        "name": "Words with the sound oo in School",
+        "level": "basic",
+        "am": "uː",
+        "list": [
+            {
+                "stt": 1,
+                "word": "school",
+                "ipa": "skuːl",
+                "translation": "Trường học",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 2,
+                "word": "food",
+                "ipa": "fuːd",
+                "translation": "Thức ăn",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 3,
+                "word": "moon",
+                "ipa": "muːn",
+                "translation": "Mặt trăng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 4,
+                "word": "room",
+                "ipa": "ruːm",
+                "translation": "Phòng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 5,
+                "word": "soon",
+                "ipa": "suːn",
+                "translation": "Sớm, chẳng mấy chốc",
+                "partOfSpeech": "Adv"
+            },
+            {
+                "stt": 6,
+                "word": "cool",
+                "ipa": "kuːl",
+                "translation": "Mát mẻ, điềm tĩnh",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 7,
+                "word": "pool",
+                "ipa": "puːl",
+                "translation": "Hồ bơi, vũng nước",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 8,
+                "word": "tool",
+                "ipa": "tuːl",
+                "translation": "Dụng cụ, công cụ",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 9,
+                "word": "boot",
+                "ipa": "buːt",
+                "translation": "Giày ống",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 10,
+                "word": "roof",
+                "ipa": "ruːf",
+                "translation": "Mái nhà",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 11,
+                "word": "zoom",
+                "ipa": "zuːm",
+                "translation": "Phóng to, di chuyển nhanh",
+                "partOfSpeech": "V, N"
+            },
+            {
+                "stt": 12,
+                "word": "mood",
+                "ipa": "muːd",
+                "translation": "Tâm trạng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 13,
+                "word": "loop",
+                "ipa": "luːp",
+                "translation": "Vòng lặp, vòng tròn",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 14,
+                "word": "noon",
+                "ipa": "nuːn",
+                "translation": "Buổi trưa (12 giờ)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 15,
+                "word": "spoon",
+                "ipa": "spuːn",
+                "translation": "Cái muỗng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 16,
+                "word": "proof",
+                "ipa": "pruːf",
+                "translation": "Bằng chứng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 17,
+                "word": "smooth",
+                "ipa": "smuːð",
+                "translation": "Mượt mà, trơn tru",
+                "partOfSpeech": "A, V"
+            },
+            {
+                "stt": 18,
+                "word": "choose",
+                "ipa": "ʧuːz",
+                "translation": "Chọn, lựa chọn",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 19,
+                "word": "gloom",
+                "ipa": "ɡluːm",
+                "translation": "U ám, buồn bã",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 20,
+                "word": "broom",
+                "ipa": "bruːm",
+                "translation": "Cái chổi",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 21,
+                "word": "groom",
+                "ipa": "ɡruːm",
+                "translation": "Chú rể, chải lông",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 22,
+                "word": "tooth",
+                "ipa": "tuːθ",
+                "translation": "Răng",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 23,
+                "word": "hoop",
+                "ipa": "huːp",
+                "translation": "Cái vòng",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 24,
+                "word": "troop",
+                "ipa": "truːp",
+                "translation": "Đội, đoàn, lính",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 25,
+                "word": "tattoo",
+                "ipa": "tæˈtuː",
+                "translation": "Hình xăm",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 26,
+                "word": "shampoo",
+                "ipa": "ʃæmˈpuː",
+                "translation": "Dầu gội đầu",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 27,
+                "word": "bamboo",
+                "ipa": "bæmˈbuː",
+                "translation": "Cây tre",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 28,
+                "word": "cartoon",
+                "ipa": "kɑːrˈtuːn",
+                "translation": "Phim hoạt hình",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 29,
+                "word": "igloo",
+                "ipa": "ˈɪɡluː",
+                "translation": "Nhà tuyết",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 30,
+                "word": "canoe",
+                "ipa": "kəˈnuː",
+                "translation": "Ca-nô (thuyền nhỏ)",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 31,
+                "word": "zoo",
+                "ipa": "zuː",
+                "translation": "Vườn bách thú",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 32,
+                "word": "who",
+                "ipa": "huː",
+                "translation": "Ai",
+                "partOfSpeech": "Pron"
+            },
+            {
+                "stt": 33,
+                "word": "to",
+                "ipa": "tuː",
+                "translation": "Đến, tới (giới từ)",
+                "partOfSpeech": "Prep"
+            },
+            {
+                "stt": 34,
+                "word": "two",
+                "ipa": "tuː",
+                "translation": "Số hai",
+                "partOfSpeech": "Num"
+            },
+            {
+                "stt": 35,
+                "word": "move",
+                "ipa": "muːv",
+                "translation": "Di chuyển",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 36,
+                "word": "prove",
+                "ipa": "pruːv",
+                "translation": "Chứng minh",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 37,
+                "word": "rule",
+                "ipa": "ruːl",
+                "translation": "Quy tắc, luật",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 38,
+                "word": "group",
+                "ipa": "ɡruːp",
+                "translation": "Nhóm",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 39,
+                "word": "truth",
+                "ipa": "truːθ",
+                "translation": "Sự thật",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 40,
+                "word": "fruit",
+                "ipa": "fruːt",
+                "translation": "Trái cây",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 41,
+                "word": "juice",
+                "ipa": "ʤuːs",
+                "translation": "Nước ép",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 42,
+                "word": "suit",
+                "ipa": "suːt",
+                "translation": "Bộ vest, phù hợp",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 43,
+                "word": "blue",
+                "ipa": "bluː",
+                "translation": "Màu xanh dương",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 44,
+                "word": "new",
+                "ipa": "nuː",
+                "translation": "Mới",
+                "partOfSpeech": "A"
+            },
+            {
+                "stt": 45,
+                "word": "chew",
+                "ipa": "ʧuː",
+                "translation": "Nhai",
+                "partOfSpeech": "V"
+            },
+            {
+                "stt": 46,
+                "word": "crew",
+                "ipa": "kruː",
+                "translation": "Phi hành đoàn",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 47,
+                "word": "flu",
+                "ipa": "fluː",
+                "translation": "Cúm",
+                "partOfSpeech": "N"
+            },
+            {
+                "stt": 48,
+                "word": "glue",
+                "ipa": "ɡluː",
+                "translation": "Keo dán",
+                "partOfSpeech": "N, V"
+            },
+            {
+                "stt": 49,
+                "word": "through",
+                "ipa": "θruː",
+                "translation": "Xuyên qua",
+                "partOfSpeech": "Prep"
+            },
+            {
+                "stt": 50,
+                "word": "youth",
+                "ipa": "juːθ",
+                "translation": "Tuổi trẻ, thanh niên",
+                "partOfSpeech": "N"
+            }
+        ]
+    }
+]

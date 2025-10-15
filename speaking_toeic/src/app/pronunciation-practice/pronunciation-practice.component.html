@@ -1,5 +1,5 @@
-<!-- school-topic.component.html -->
-<!--  đầu -->
+<!-- pronunciation-practice.component.html -->
+<!-- Header -->
 <section class="header">
   <div class="container">
     <div class="header-left">
@@ -36,56 +36,58 @@
         <div class="user-flag">🇻🇳</div>
         <span class="user-tier">BASIC</span>
         <div class="user-avatar">
-          <img src="/assets/img/avatar-placeholder.png" alt="Avatar" (error)="onImageError($event, 'avatar')">
+          <img src="/assets/img/avatar.png" alt="Avatar" (error)="onImageError($event, 'avatar')">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="back-button-wrapper">
-  <button class="back-button" (click)="goBack()">
-    ← Trở về
-  </button>
-</div>
+<!-- Debug info -->
+<!-- <div *ngIf="allTopics().length > 0" style="position: fixed; top: 200px; right: 10px; background: yellow; padding: 15px; z-index: 9999; font-size: 14px; max-width: 300px;">
+  <div><strong>DEBUG INFO:</strong></div>
+  <div>Topics: {{ allTopics().length }}</div>
+  <div>Current Topic: {{ currentTopic()?.name || 'NULL' }}</div>
+  <div>Current Words: {{ currentWords().length }}</div>
+  <div>Topic Index: {{ currentTopicIndex() }}</div>
+  <div>Lesson Index: {{ currentLessonIndex() }}</div>
+</div> -->
 
-<div class="speaking-layout" *ngIf="lessons.length">
+<div class="speaking-layout" *ngIf="currentTopic() && currentWords().length > 0">
   <aside class="left-menu">
-    <div class="menu-group">
-      <div class="menu-group-title">{{ getCurrentTopicName() }}</div>
+    <div class="back-button-wrapper">
+      <button class="back-button" (click)="goBack()">
+        ← Trở về
+      </button>
+    </div>
 
-      <div class="vowel-filter-section">
-        <div class="vowel-list">
+    <div class="menu-group">
+      <div class="menu-group-title">Chủ đề</div>
+      <div class="topic-list">
+        @for (topic of allTopics(); track topic.name; let i = $index) {
           <button
             class="vowel-item"
-            [class.active]="activeVowel() === 'all'"
-            (click)="filterByVowel('all')">
-            Tất cả ({{ lessons.length }})
+            [class.active]="i === currentTopicIndex()"
+            (click)="selectTopic(i)">
+            {{ getTopicDisplayName(topic) }}
           </button>
-          @for (vowel of getAvailableVowels(); track vowel.code) {
-            <button
-              class="vowel-item"
-              [class.active]="activeVowel() === vowel.code"
-              (click)="filterByVowel(vowel.code)">
-              {{ vowel.label }} ({{ vowel.count }})
-            </button>
-          }
-        </div>
+        }
       </div>
     </div>
+
   </aside>
 
-  <section class="flashcard-panel" *ngIf="getCurrentLesson() as current">
+  <section class="flashcard-panel" *ngIf="getCurrentWord() as current">
     <div class="flashcard word-mode">
       <h2 class="word-title">
         <ng-container *ngIf="getWorstPhonemeLabel() as worst">
-          {{ current.english }}
+          {{ current.word }}
         </ng-container>
         <ng-container *ngIf="!getWorstPhonemeLabel()">
-          {{ current.english }}
+          {{ current.word }}
         </ng-container>
       </h2>
-      <div class="word-meaning">{{ current.vietnamese }}</div>
+      <div class="word-meaning">{{ current.translation }}</div>
 
       <div class="pronunciation-buttons">
         <button class="pronunciation-btn us-btn" (click)="playAudio('us')" [class.playing]="isPlayingUS()">
@@ -98,19 +100,26 @@
         </button>
       </div>
 
-      <div class="phonetic-line">{{ current.phonetic }}</div>
+      <div class="phonetic-line">{{ current.ipa }}</div>
 
       <div class="recording-section">
         <button class="record-btn"
+                [class.preparing]="isPreparing()"
                 [class.recording]="isRecording()"
                 [class.processing]="isProcessing()"
                 (click)="startRecording()">
-          <img src="/assets/img/mic-white.png" alt="Microphone" class="mic-icon" *ngIf="!isRecording() && !isProcessing()" (error)="onMicImageError($event)">
+          <img src="/assets/img/mic-white.png" alt="Microphone" class="mic-icon" *ngIf="!isPreparing() && !isRecording() && !isProcessing()" (error)="onMicImageError($event)">
           <img src="/assets/img/songam.png" alt="Waveform" class="waveform-icon" *ngIf="isRecording()">
         </button>
-        <div class="recording-text" *ngIf="isRecording()">Đang ghi lại âm thanh.. 5s</div>
-        <div class="processing-text" *ngIf="!isRecording() && isProcessing()">Đang xử lý...</div>
-        <div class="ready-text" *ngIf="!isRecording() && !isProcessing() && !showScore()">Nhấn vào để nói</div>
+        <div class="recording-text" *ngIf="isRecording() && !readyMessage()">Đang ghi lại âm thanh.. 5s</div>
+        <div class="ready-recording-text" 
+             [class.preparing-text]="isPreparing()"
+             [class.recording-active-text]="isRecording()"
+             *ngIf="readyMessage()">{{ readyMessage() }}</div>
+        <div class="processing-text" *ngIf="!isPreparing() && !isRecording() && isProcessing()">Đang xử lý...</div>
+        <div class="ready-text" *ngIf="!isPreparing() && !isRecording() && !isProcessing() && !showScore() && !readyMessage()">
+          {{ hasMicPermission() ? 'Nhấn vào để ghi âm' : 'Nhấn để cấp quyền microphone' }}
+        </div>
       </div>
 
       <div class="score-section" *ngIf="showScore()">
@@ -196,13 +205,13 @@
     <div class="menu-group">
       <div class="menu-group-title">Từ vựng</div>
       <div class="word-list">
-        @for (lesson of sidebarLessons; track lesson.id) {
+        @for (word of currentWords(); track word.word; let i = $index) {
           <div class="word-item"
-               [class.active]="lesson.id === getCurrentLesson().id"
-               (click)="selectLesson(lessons.indexOf(lesson))">
+               [class.active]="i === currentLessonIndex()"
+               (click)="selectWord(i)">
             <div class="word-content">
-              <div class="w-term">{{ lesson.english }}</div>
-              <div class="w-ipa">{{ lesson.phonetic }}</div>
+              <div class="w-term">{{ word.word }}</div>
+              <div class="w-ipa">{{ word.ipa }}</div>
             </div>
           </div>
         }
@@ -211,6 +220,9 @@
   </aside>
 </div>
 
-<div class="empty-state" *ngIf="!lessons.length">
-  Không tìm thấy dữ liệu cho chủ đề hiện tại.
+<div class="empty-state" *ngIf="!currentTopic() || currentWords().length === 0">
+  <p>Đang tải dữ liệu pronunciation...</p>
+  <p style="font-size: 14px; color: #999;">Topics: {{ allTopics().length }}</p>
+  <p style="font-size: 14px; color: #999;">Current Topic: {{ currentTopic()?.name || 'NULL' }}</p>
+  <p style="font-size: 14px; color: #999;">Words: {{ currentWords().length }}</p>
 </div>

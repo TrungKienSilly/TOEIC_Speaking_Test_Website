@@ -1,0 +1,77 @@
+[
+    {
+        "level": "Excellent",
+        "description": "Feedback cho điểm Excellent, rất xuất sắc!",
+        "detail": [
+            {
+                "feedback": "Giỏi quá, có vẻ bạn đã quen với âm này hơn rồi đấy!"
+            },
+            {
+                "feedback": "Bạn đã tiến bộ hơn rất nhiều rồi, cố gắng lên nào!"
+            },
+            {
+                "feedback": "Tuyệt vời! Bạn đang làm rất tốt việc luyện tập phát âm."
+            },
+            {
+                "feedback": "Xuất sắc! Bạn đã nắm vững cách phát âm này."
+            },
+            {
+                "feedback": "Bạn đang trên đường trở thành một bậc thầy phát âm!"
+            },
+            {
+                "feedback": "Bạn đang tự tin sử dụng tiếng Anh hơn rồi đấy"
+            }
+        ]
+    },
+    {
+        "level": "Good",
+        "description": "Feedback cho điểm Good, rất tốt!",
+        "detail": [
+            {
+                "feedback": "Bạn đã làm rất tốt, chỉ cần một chút luyện tập nữa thôi!"
+            },
+            {
+                "feedback": "Bạn làm được rồi, từ này khó nha!"
+            },
+            {
+                "feedback": "Tuyệt vời! Bạn đang tiến gần hơn đến việc phát âm chuẩn."
+            },
+            {
+                "feedback": "Bạn đã tiến bộ hơn rất nhiều rồi, cố gắng lên nào!"
+            },
+            {
+                "feedback": "Giỏi quá, có vẻ bạn đã quen với âm này hơn rồi đấy!"
+            },
+            {
+                "feedback": "Bạn đang trên đường trở thành một bậc thầy phát âm!"
+            },
+            {
+                "feedback": "Bạn đang tự tin sử dụng tiếng Anh hơn rồi đấy"
+            },
+            {
+                "feedback": "Nỗ lực của bạn đã được đền đáp"
+            }
+        ]
+    },
+    {
+        "level": "Bad",
+        "description": "Feedback cho điểm Bad, chưa tốt!",
+        "detail": [
+            {
+                "feedback": "Âm này khá khó, bạn thử nghe kỹ và nói chậm lại một chút nhé!"
+            },
+            {
+                "feedback": "Đừng nản lòng nếu bạn chưa hoàn hảo, luyện tập sẽ giúp bạn cải thiện."
+            },
+            {
+                "feedback": "Thử thêm một lần nữa nhé!"
+            },
+            {
+                "feedback": "Bạn có thể thử nói chậm hơn để kiểm soát tốt hơn các âm."
+            },
+            {
+                "feedback": "Hãy kiên nhẫn và tiếp tục luyện tập, bạn sẽ thấy kết quả."
+            }
+        ]
+    }
+]

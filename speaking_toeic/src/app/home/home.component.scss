@@ -453,9 +453,14 @@ body {
 }
 
 .path-card.speaking {
-  background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
-  color: white;
-  border: 3px solid #FF6B6B;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .path-card.speaking .card-icon {
@@ -464,12 +469,20 @@ body {
 }
 
 .path-card.speaking p {
+  color: #666;
+  font-size: 0.9rem;
+}
+.path-card.speaking.active p {
   color: rgba(255, 255, 255, 0.9);
 }
-
 .path-card.speaking:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.path-card.speaking.active {
+  border: 3px solid #4CAF50;
+  background: linear-gradient(135deg, #4CAF50, #66BB6A);
+  color: white;
 }
 
 /* Vocabulary Section */
@@ -683,6 +696,33 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.25);
+}
+
+.new-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #ff4081, #ff5252);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 12px rgba(255, 64, 129, 0.35);
+  animation: pulse-new 2s ease-in-out infinite;
+}
+
+@keyframes pulse-new {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.35);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 64, 129, 0.5);
+  }
 }
 
 .lesson-tags {

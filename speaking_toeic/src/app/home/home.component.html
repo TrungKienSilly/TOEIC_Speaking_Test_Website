@@ -214,7 +214,7 @@
               <!-- Khúc bên trái này để chọn chức năng như từ vựng, câu, đoạn văn -->
               <div class="speaking-left-content">
                 <div class="sidebar-card">
-                  <h4>30 Chủ đề TOEIC</h4>
+                  <h4>Các chủ đề TOEIC</h4>
                   <div class="topic-buttons">
                     <button class="topic-btn" 
                             [class.active]="activeSpeakingTopic() === 'vocabulary'"
@@ -247,11 +247,13 @@
                   <div class="lesson-grid">
                     @for (lesson of getCurrentSpeakingLessons(); track lesson.id) {
                       <div class="lesson-card">
-                        <div class="development-badge" *ngIf="lesson.id !== 'school'">
-                          🔒
+                        <!-- NEW badge cho tất cả các topic trong Part 1 - Vocabulary -->
+                        <div class="new-badge" *ngIf="activeSpeakingPart() === 'part1' && activeSpeakingTopic() === 'vocabulary'">
+                          NEW
                         </div>
-                        <div class="demo-badge" *ngIf="lesson.id === 'school'">
-                          Demo
+                        <!-- Lock badge cho các phần khác -->
+                        <div class="development-badge" *ngIf="!(activeSpeakingPart() === 'part1' && activeSpeakingTopic() === 'vocabulary')">
+                          🔒
                         </div>
                         <div class="lesson-tags">
                           @for (tag of lesson.tags; track tag) {

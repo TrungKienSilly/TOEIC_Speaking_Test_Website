@@ -1,6 +1,7 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { PronunciationDataService, PronunciationTopic } from '../services/pronunciation-data.service';
 
 // Các loại chủ để học tập - chọn cái nào cũng được, miễn là học được
 export type LearningPath = 'vocabulary' | 'fill-blanks' | 'basic-learning' | 'roadmap' | 'speaking';
@@ -36,12 +37,24 @@ export class HomeComponent implements OnInit {
   protected readonly title = signal('990 TOEIC Speaking Practice');
   showFallback = false;
   
-  constructor(private router: Router) {
+  // Data từ JSON
+  pronunciationTopics: PronunciationTopic[] = [];
+  
+  constructor(
+    private router: Router,
+    private pronunciationService: PronunciationDataService
+  ) {
     console.log('HomeComponent khởi tạo - chào mừng đến với trang TOEIC!');
   }
   
-  ngOnInit() {
+  async ngOnInit() {
     console.log('HomeComponent sẵn sàng - bắt đầu học thôi!');
+    
+    // Load pronunciation data từ JSON
+    await this.pronunciationService.loadData();
+    this.pronunciationTopics = this.pronunciationService.getAllTopics();
+    
+    console.log('✅ Loaded', this.pronunciationTopics.length, 'pronunciation topics for home');
   }
   
   // Quản lý trạng thái - theo dõi xem user đang làm gì
@@ -94,14 +107,7 @@ export class HomeComponent implements OnInit {
   // Dữ liệu Speaking - các bài nói chi tiết
   speakingData = {
     part1: {
-      vocabulary: [
-        { id: 'school', title: 'Trường học', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' },
-        { id: 'hobby', title: 'Sở thích', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' },
-        { id: 'food', title: 'Đồ ăn', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' },
-        { id: 'shopping', title: 'Mua sắm', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' },
-        { id: 'environment', title: 'Môi trường', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' },
-        { id: 'work', title: 'Công việc', description: '30 từ vựng', tags: ['Flashcard & Quiz'], buttonText: 'Luyện tập' }
-      ],
+      vocabulary: [] as SpeakingLesson[], // Sẽ load từ JSON
       sentence: [
         { id: 'meeting', title: 'Cuộc họp', description: '30 Câu chủ đề', tags: ['Flashcard & Speaking'], buttonText: 'Luyện tập' },
         { id: 'movie', title: 'Xem phim', description: '30 Câu chủ đề', tags: ['Flashcard & Speaking'], buttonText: 'Luyện tập' },
@@ -216,7 +222,31 @@ export class HomeComponent implements OnInit {
   getCurrentSpeakingLessons(): SpeakingLesson[] {
     const part = this.activeSpeakingPart();
     const topic = this.activeSpeakingTopic();
+    
+    // Nếu là Part 1 và Vocabulary, load từ JSON
+    if (part === 'part1' && topic === 'vocabulary') {
+      return this.pronunciationTopics.map((pronunciationTopic, index) => ({
+        id: `pronunciation-${index}`, // ID sẽ là pronunciation-0, pronunciation-1, ...
+        title: this.getPronunciationTopicTitle(pronunciationTopic),
+        description: `${pronunciationTopic.list.length} từ vựng`,
+        tags: ['Flashcard & Quiz'],
+        buttonText: 'Luyện tập'
+      }));
+    }
+    
     return this.speakingData[part][topic];
+  }
+  
+  // Helper: Get pronunciation topic title
+  getPronunciationTopicTitle(topic: PronunciationTopic): string {
+    // Extract shorter name from full name
+    // "Words with the sound a in Cat" -> "Âm /æ/ trong Cat"
+    const match = topic.name.match(/sound (\w+) in (\w+)/i);
+    if (match) {
+      return `Âm /${topic.am}/ - ${match[2]}`;
+    }
+    // Fallback
+    return topic.name.replace(/^Words with the\s+/i, '');
   }
   
   // Lấy tiêu đề Part speaking - tên của từng phần nói
@@ -233,6 +263,17 @@ export class HomeComponent implements OnInit {
   
   // Chuyển đến trang luyện nói - điều hướng sang trang khác
   goToSpeakingPractice(topicId?: string) {
+    // Nếu là pronunciation topic (từ JSON)
+    if (topicId && topicId.startsWith('pronunciation-')) {
+      // Extract index từ ID (pronunciation-0 -> 0)
+      const topicIndex = parseInt(topicId.split('-')[1]);
+      // Navigate với query param
+      this.router.navigate(['/pronunciation-practice'], { 
+        queryParams: { topic: topicIndex } 
+      });
+      return;
+    }
+    
     // Điều hướng đến các trang topic riêng biệt
     if (topicId) {
       // Map các ID cũ sang tên topic mới
