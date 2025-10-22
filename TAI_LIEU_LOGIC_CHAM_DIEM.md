@@ -1355,5 +1355,5 @@ Hệ thống chấm điểm phát âm sử dụng Azure Speech Service với log
 ---
 
 **Phiên bản tài liệu:** 1.0  
-**Tác giả:** Development Team  
+**Tác giả:** Trung Kien Silly  
 **Ngày:** 14/10/2025
